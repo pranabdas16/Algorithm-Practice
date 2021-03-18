@@ -51,23 +51,28 @@ namespace ConsoleApp
             //obj.twoSumArray();
 
             ///Find longest common Prefix using character by charcter matching....
-            String[] arr = {"geeksforgeeks", "geeks",
-            "geek", "geezer" };
-            int n = arr.Length;
+            //String[] arr = {"geeksforgeeks", "geeks",
+            //"geek", "geezer" };
+            //int n = arr.Length;
 
-            commonPrefix obj = new commonPrefix();
+            //commonPrefix obj = new commonPrefix();
 
-            string ans = obj.CommonPrefix(arr, n);
+            //string ans = obj.CommonPrefix(arr, n);
 
-            if (ans.Length > 0)
-            {
-                Console.WriteLine("The longest common prefix is:" + ans);
-            }
-            else
-            {
-                Console.WriteLine("There is no common prefix");
-            }
-            Console.ReadLine();
+            //if (ans.Length > 0)
+            //{
+            //    Console.WriteLine("The longest common prefix is:" + ans);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("There is no common prefix");
+            //}
+            //Console.ReadLine();
+
+            ///Valid Parenthesis
+            ///Given a string containing just the charcters (, ), {, }, [ and ] detemine if the input sting is valid.
+            validParenthesis obj = new validParenthesis();
+            obj.isValidReview();
 
         }
 
