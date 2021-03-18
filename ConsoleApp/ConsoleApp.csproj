@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="commonPrefix.cs" />
     <Compile Include="IntegerToRoman.cs" />
     <Compile Include="Palindrome.cs" />
     <Compile Include="Program.cs" />

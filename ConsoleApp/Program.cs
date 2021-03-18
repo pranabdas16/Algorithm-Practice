@@ -47,8 +47,27 @@ namespace ConsoleApp
             //obj.romanToInteger();
 
             ///Two sum Array...
-            TwoSumArray obj = new TwoSumArray();
-            obj.twoSumArray();
+            //TwoSumArray obj = new TwoSumArray();
+            //obj.twoSumArray();
+
+            ///Find longest common Prefix using character by charcter matching....
+            String[] arr = {"geeksforgeeks", "geeks",
+            "geek", "geezer" };
+            int n = arr.Length;
+
+            commonPrefix obj = new commonPrefix();
+
+            string ans = obj.CommonPrefix(arr, n);
+
+            if (ans.Length > 0)
+            {
+                Console.WriteLine("The longest common prefix is:" + ans);
+            }
+            else
+            {
+                Console.WriteLine("There is no common prefix");
+            }
+            Console.ReadLine();
 
         }
 
