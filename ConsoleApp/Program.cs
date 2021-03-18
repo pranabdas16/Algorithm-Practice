@@ -1,0 +1,139 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the string/Int:");
+            //string myString = Console.ReadLine().ToString();
+            // int vlaue = int.Parse(Console.ReadLine());
+
+            ///sort string call function.....
+            //SortString objSortSring = new SortString();
+            //objSortSring.shortstring(myString);
+
+            /// Reverse string......
+            //ReverseString objReverseString = new ReverseString();
+            //objReverseString.reverseString(myString);
+
+            ///Reverse integer value...
+            //int value = Convert.ToInt32(myString);
+            //StackIntSimple objIntStack = new StackIntSimple();
+            //objIntStack.stackIntegerSimple(value);
+
+            //int[] arr = new int[] { 1, 2, 3, 4 };
+            //Stack<int> myStack = new Stack<int>(arr);
+
+            //foreach (var item in myStack)
+            //    Console.Write(item + ","); //prints 4,3,2,1, 
+
+            ///Reverse integer value.....
+            //int var = int.Parse(Console.ReadLine());
+            //ReverseInteger objrevInt = new ReverseInteger();
+            //objrevInt.reverseInteger(var);
+
+            ///Check for palindrome of integer value
+            //Palindrome obj = new Palindrome();
+            //obj.palindrome();
+
+            /// Roman to interger
+            //RomanToInteger obj = new RomanToInteger();
+            //obj.romanToInteger();
+
+            ///Two sum Array...
+            TwoSumArray obj = new TwoSumArray();
+            obj.twoSumArray();
+
+        }
+
+        //static void reverse(int x)
+        //{
+        //    long res = 0;
+        //    while (x != 0)
+        //    {
+        //        res = res * 10 + x % 10;
+        //        x = x / 10;
+        //    }
+
+        //    if (res < int.MinValue || res > int.MaxValue)
+        //    {
+        //        //return 0;
+        //        Console.Write("");
+        //    }
+        //    else {
+        //        Console.Write(res);
+        //    }
+        //}
+        static void removeDuplicate(char[] CharArry, int b)
+        {
+            string str = new string(CharArry);
+           // List<string> listStr = new List<string>(str);
+            string newStr="";
+            //int index = 0;
+            int i=0, j;
+
+            while (i < b)
+            {
+                j = i;
+
+                char  c =  str[i];
+
+                for (j = 1; j < b; j++)
+                {
+                    if (str[i] == str[j])
+                    {
+                        //str.Remove(i, i);
+                    }
+                    
+                }
+
+                i++;
+                // Console.Write(c);
+                
+
+            }
+            
+                Console.Write(str);
+            
+            Console.ReadLine();
+
+
+
+            //for ( i = 0; i < b; i++)
+            //{
+            //    for ( j = i+1; j < b; j++)
+            //    {
+            //        if (str[i] == str[j])
+            //        {
+                        
+            //            break;
+            //        }
+                    
+            //    }
+            //    if(j<b)
+            //    if(str[i] == str[j])
+            //    {
+            //        //do nothhing;
+            //    }
+            //    else
+            //    str[index++] = str[i];
+            //    //if (j == i)
+            //    //{
+            //    //    str[index++] = str[i];
+            //    //}
+
+
+            //}
+            //while()
+            //for (int k = 0; k < index; k++)
+            //    Console.Write(str[index]);
+            //Console.ReadLine();
+        }
+    }
+}

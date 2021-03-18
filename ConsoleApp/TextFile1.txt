@@ -1,0 +1,42 @@
+﻿int iRows = 6, iSpace, iNumber;
+ Console.WriteLine("Pyramid Pattern");
+ for (int i = 1; i <= iRows; i++) // Total number of rows for pramid 
+ {
+ for (iSpace = 1; iSpace <= (iRows - i); iSpace++) // Loop For Space 
+ Console.Write(" ");
+ for (iNumber = 1; iNumber <= i; iNumber++) //increase the value 
+ Console.Write(iNumber);
+ for (iNumber = (i - 1); iNumber >= 1; iNumber--) //decrease the value 
+ Console.Write(iNumber);
+ Console.WriteLine();
+ }
+ Console.ReadKey();
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Hello World");
+            Console.Write('\n');
+            for (int i = 5; i > 0; i--)
+                for (int j = 0; j < 5; j++)
+                {
+                    Console.Write("*");
+                }
+            Console.WriteLine(" ");
+
+
+            Console.ReadLine();
+        }
+    }
+}
