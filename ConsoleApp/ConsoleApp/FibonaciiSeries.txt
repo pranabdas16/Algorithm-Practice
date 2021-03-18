@@ -1,0 +1,17 @@
+﻿			int i = 0;
+            int j = 1;
+            int k;
+            int number;
+            Console.Write("Wnter the number:");
+            number = Convert.ToInt32(Console.ReadLine());
+            
+            Console.Write(i + " " + j);
+            for (int l = 2; l < number; l++)
+            {
+                k = i + j;
+                Console.Write(" "+k);
+                i = j;
+                j = k;
+
+            }
+            Console.ReadKey();

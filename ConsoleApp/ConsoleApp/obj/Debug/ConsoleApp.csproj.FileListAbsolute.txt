@@ -1,0 +1,6 @@
+C:\Pranab\Practice\ConsoleApp\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\Pranab\Practice\ConsoleApp\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\Pranab\Practice\ConsoleApp\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\Pranab\Practice\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+C:\Pranab\Practice\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\Pranab\Practice\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.pdb
