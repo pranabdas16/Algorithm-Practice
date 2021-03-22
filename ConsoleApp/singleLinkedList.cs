@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    class singleLinkedList
-    {
+    //class singleLinkedList
+    //{
         class LinkedListNode
         {
             public int data;
@@ -35,11 +35,23 @@ namespace ConsoleApp
             {
                 LinkedListNode node = new LinkedListNode(data);
                 node.next = head;
+                head = node;
 
                 count++;
             }
 
+            public void PrintList()
+            {
+                LinkedListNode runner = head;
+                while (runner != null)
+                {
+                    Console.WriteLine(runner.data);
+                    runner = runner.next;
+                }
+            }
+
+
         }
 
-    }
+  //  }
 }

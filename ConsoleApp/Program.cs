@@ -83,8 +83,16 @@ namespace ConsoleApp
            // obj.stackOfIntArry();
 
             ///Stack of String Array use...
-            obj.stackOfStringArray();
+           // obj.stackOfStringArray();
 
+            LinkedList linkedList = new LinkedList();
+            linkedList.AddNodeToFront(5);
+            linkedList.AddNodeToFront(6);
+            linkedList.AddNodeToFront(1);
+            linkedList.AddNodeToFront(11);
+            linkedList.PrintList();
+
+            Console.ReadLine();
         }
 
         //static void reverse(int x)
