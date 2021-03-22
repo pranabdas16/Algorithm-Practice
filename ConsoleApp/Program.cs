@@ -10,7 +10,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the string/Int:");
+            // Console.Write("Enter the string/Int:");
             //string myString = Console.ReadLine().ToString();
             // int vlaue = int.Parse(Console.ReadLine());
 
@@ -71,8 +71,19 @@ namespace ConsoleApp
 
             ///Valid Parenthesis
             ///Given a string containing just the charcters (, ), {, }, [ and ] detemine if the input sting is valid.
-            validParenthesis obj = new validParenthesis();
-            obj.isValidReview();
+            //validParenthesis obj = new validParenthesis();
+            //obj.isValidReview();
+
+            ///Stack exercise....
+            ///integer stack
+            StackExercise obj = new StackExercise();
+            //obj.stackofInt();
+
+            ///Stack of int Array use....
+           // obj.stackOfIntArry();
+
+            ///Stack of String Array use...
+            obj.stackOfStringArray();
 
         }
 

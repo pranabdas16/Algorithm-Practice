@@ -51,7 +51,9 @@
     <Compile Include="ReverseInteger.cs" />
     <Compile Include="ReverseString.cs" />
     <Compile Include="RomanToInteger.cs" />
+    <Compile Include="singleLinkedList.cs" />
     <Compile Include="SortString.cs" />
+    <Compile Include="StackExercise.cs" />
     <Compile Include="StackIntSimple.cs" />
     <Compile Include="TwoSumArray.cs" />
     <Compile Include="validParenthesis.cs" />
