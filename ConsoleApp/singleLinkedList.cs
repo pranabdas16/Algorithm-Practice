@@ -39,6 +39,19 @@ namespace ConsoleApp
 
                 count++;
             }
+        public void AddNodeToEnd(int data)
+        {
+            LinkedListNode node = new LinkedListNode(data);
+            if (head == null)
+            {
+                head = new LinkedListNode(data);
+            }
+            else
+            {
+                AddNodeToEnd(data);
+            }
+
+        }
 
             public void PrintList()
             {

@@ -55,6 +55,7 @@
     <Compile Include="SortString.cs" />
     <Compile Include="StackExercise.cs" />
     <Compile Include="StackIntSimple.cs" />
+    <Compile Include="SumOfOneDArray.cs" />
     <Compile Include="TwoSumArray.cs" />
     <Compile Include="validParenthesis.cs" />
   </ItemGroup>

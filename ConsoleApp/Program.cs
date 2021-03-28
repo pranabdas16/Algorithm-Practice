@@ -85,12 +85,26 @@ namespace ConsoleApp
             ///Stack of String Array use...
            // obj.stackOfStringArray();
 
+            ///Single Linked list with multiple action..
+            
+            ///Single linked list to add 
             LinkedList linkedList = new LinkedList();
-            linkedList.AddNodeToFront(5);
-            linkedList.AddNodeToFront(6);
-            linkedList.AddNodeToFront(1);
-            linkedList.AddNodeToFront(11);
-            linkedList.PrintList();
+            //linkedList.AddNodeToFront(5);
+            //linkedList.AddNodeToFront(6);
+            //linkedList.AddNodeToFront(1);
+            //linkedList.AddNodeToFront(11);
+
+
+            ///Single linked list... add to end..
+            //linkedList.AddNodeToEnd(1);
+            //linkedList.AddNodeToEnd(2);
+            //linkedList.AddNodeToEnd(3);
+            //linkedList.AddNodeToEnd(4);
+
+            //linkedList.PrintList();
+
+            SumOfOneDArray objS= new SumOfOneDArray();
+            objS.sumOfOneDArray();
 
             Console.ReadLine();
         }
