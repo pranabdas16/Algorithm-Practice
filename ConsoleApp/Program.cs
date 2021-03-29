@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleApp.Simple_problem;
 
 namespace ConsoleApp
 {
@@ -106,10 +107,14 @@ namespace ConsoleApp
             //SumOfOneDArray objS= new SumOfOneDArray();
             //objS.sumOfOneDArray();
 
-            LongestUniqueSubsttr objLngUnqsubstr = new LongestUniqueSubsttr();
-            objLngUnqsubstr.longestUniqueSubsttr();
+            //LongestUniqueSubsttr objLngUnqsubstr = new LongestUniqueSubsttr();
+            //objLngUnqsubstr.longestUniqueSubsttr();
 
-            Console.ReadLine();
+            TwoDArray objt = new TwoDArray();
+            objt.twoDArray();
+
+
+            //Console.ReadLine();
         }
 
         //static void reverse(int x)
