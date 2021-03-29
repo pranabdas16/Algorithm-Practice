@@ -103,8 +103,11 @@ namespace ConsoleApp
 
             //linkedList.PrintList();
 
-            SumOfOneDArray objS= new SumOfOneDArray();
-            objS.sumOfOneDArray();
+            //SumOfOneDArray objS= new SumOfOneDArray();
+            //objS.sumOfOneDArray();
+
+            LongestUniqueSubsttr objLngUnqsubstr = new LongestUniqueSubsttr();
+            objLngUnqsubstr.longestUniqueSubsttr();
 
             Console.ReadLine();
         }
