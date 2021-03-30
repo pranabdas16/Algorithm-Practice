@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleApp.Simple_problem;
+using ConsoleApp.Hacker_Rank_challanges_and_extra;
 
 namespace ConsoleApp
 {
@@ -113,7 +114,8 @@ namespace ConsoleApp
             //AVeryBigSum objBigSum = new AVeryBigSum();
             //objBigSum.aVeryBigSum();
 
-           
+            PlusMinus objPlusMinus = new PlusMinus();
+            objPlusMinus.plusMinus();
 
             //Console.ReadLine();
         }
