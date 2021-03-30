@@ -52,6 +52,8 @@
     <Compile Include="ReverseInteger.cs" />
     <Compile Include="ReverseString.cs" />
     <Compile Include="RomanToInteger.cs" />
+    <Compile Include="Simple problem\AVeryBigSum.cs" />
+    <Compile Include="Simple problem\CompareTheTriplets.cs" />
     <Compile Include="Simple problem\SimpleArraySum.cs" />
     <Compile Include="Simple problem\TwoDArray.cs" />
     <Compile Include="singleLinkedList.cs" />
