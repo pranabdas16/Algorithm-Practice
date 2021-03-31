@@ -114,8 +114,8 @@ namespace ConsoleApp
             //AVeryBigSum objBigSum = new AVeryBigSum();
             //objBigSum.aVeryBigSum();
 
-            PlusMinus objPlusMinus = new PlusMinus();
-            objPlusMinus.plusMinus();
+            Staircase objStaircase = new Staircase();
+            objStaircase.staircase();
 
             //Console.ReadLine();
         }
