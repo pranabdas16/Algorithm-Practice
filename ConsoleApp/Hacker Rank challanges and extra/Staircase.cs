@@ -10,11 +10,11 @@ namespace ConsoleApp.Hacker_Rank_challanges_and_extra
     {
         public void staircase()
         {
-            int n = 10, l = 1;
+            int n = 6, l = 1;
 
             while (n > 0)
             {
-                for (int i = n; i > 0; i--)
+                for (int i = n; i > 1; i--)
                 {
                     Console.Write(" ");
                 }

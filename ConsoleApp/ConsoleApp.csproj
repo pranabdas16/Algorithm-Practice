@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="commonPrefix.cs" />
+    <Compile Include="Hacker Rank challanges and extra\BirthdayCakeCandles.cs" />
+    <Compile Include="Hacker Rank challanges and extra\MinimumNumber.cs" />
     <Compile Include="Hacker Rank challanges and extra\PlusMinus.cs" />
     <Compile Include="Hacker Rank challanges and extra\Staircase.cs" />
     <Compile Include="IntegerToRoman.cs" />

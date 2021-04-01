@@ -114,8 +114,11 @@ namespace ConsoleApp
             //AVeryBigSum objBigSum = new AVeryBigSum();
             //objBigSum.aVeryBigSum();
 
-            Staircase objStaircase = new Staircase();
-            objStaircase.staircase();
+            //Staircase objStaircase = new Staircase();
+            //objStaircase.staircase();
+
+            BirthdayCakeCandles objBirCake = new BirthdayCakeCandles();
+            objBirCake.birthdayCakeCandles();
 
             //Console.ReadLine();
         }
