@@ -117,8 +117,8 @@ namespace ConsoleApp
             //Staircase objStaircase = new Staircase();
             //objStaircase.staircase();
 
-            BirthdayCakeCandles objBirCake = new BirthdayCakeCandles();
-            objBirCake.birthdayCakeCandles();
+            BirthdayCakeCandlesOpt objBirCake = new BirthdayCakeCandlesOpt();
+            objBirCake.birthdayCakeCandlesOpt();
 
             //Console.ReadLine();
         }

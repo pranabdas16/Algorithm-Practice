@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.Hacker_Rank_challanges_and_extra
 {
+    /// <summary>
+    /// BirthdayCakeCandles....
+    /// </summary>
+    ///BirthdayCakeCandles objBirCake = new BirthdayCakeCandles();
+    ///objBirCake.birthdayCakeCandles();
+    ///This one is not optimize so creating another
     class BirthdayCakeCandles
     {
         List<int> candles = new List<int>();
