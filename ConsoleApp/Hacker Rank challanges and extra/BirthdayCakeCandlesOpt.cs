@@ -11,9 +11,9 @@ namespace ConsoleApp.Hacker_Rank_challanges_and_extra
         /// <summary>
         /// BirthdayCakeCandlesOpt optimized....
         /// </summary>
-        ///BirthdayCakeCandlesOpt objBirCake = new BirthdayCakeCandlesOpt();
-        ///objBirCake.birthdayCakeCandlesOpt();
-        ///This one is not optimize so creating another
+        /// BirthdayCakeCandlesOpt objBirCake = new BirthdayCakeCandlesOpt();
+        /// objBirCake.birthdayCakeCandlesOpt();
+        /// This one is not optimize so creating another
 
         List<int> candles = new List<int>();
         public void birthdayCakeCandlesOpt()
@@ -38,7 +38,7 @@ namespace ConsoleApp.Hacker_Rank_challanges_and_extra
                     count++;
                 }
             }
-            Console.WriteLine("Number max height candle:" + count);
+            Console.WriteLine("Number max height candle" + count);
             Console.ReadLine();
         }
     }
