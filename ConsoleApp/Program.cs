@@ -117,8 +117,11 @@ namespace ConsoleApp
             //Staircase objStaircase = new Staircase();
             //objStaircase.staircase();
 
-            BirthdayCakeCandlesOpt objBirCake = new BirthdayCakeCandlesOpt();
-            objBirCake.birthdayCakeCandlesOpt();
+            //MiniMaxSum OjbMinMaxSum = new MiniMaxSum();
+            //OjbMinMaxSum.miniMaxSum();
+
+            TimeConversion objTimeConversion = new TimeConversion();
+            objTimeConversion.timeConversion("");
 
             //Console.ReadLine();
         }
