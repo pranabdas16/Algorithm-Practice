@@ -120,6 +120,7 @@ namespace ConsoleApp
             //MiniMaxSum OjbMinMaxSum = new MiniMaxSum();
             //OjbMinMaxSum.miniMaxSum();
 
+            
 
             //Console.ReadLine();
         }
