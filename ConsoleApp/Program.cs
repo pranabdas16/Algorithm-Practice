@@ -120,8 +120,6 @@ namespace ConsoleApp
             //MiniMaxSum OjbMinMaxSum = new MiniMaxSum();
             //OjbMinMaxSum.miniMaxSum();
 
-            TimeConversion objTimeConversion = new TimeConversion();
-            objTimeConversion.timeConversion("");
 
             //Console.ReadLine();
         }
