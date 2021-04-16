@@ -33,7 +33,7 @@ namespace ConsoleApp
             //Stack<int> myStack = new Stack<int>(arr);
 
             //foreach (var item in myStack)
-            //    Console.Write(item + ","); //prints 4,3,2,1, 
+            //Console.Write(item + ","); //prints 4,3,2,1, 
 
             ///Reverse integer value.....
             //int var = int.Parse(Console.ReadLine());
@@ -104,24 +104,41 @@ namespace ConsoleApp
             //linkedList.AddNodeToEnd(4);
 
             //linkedList.PrintList();
+            string s = "10:28:05AM";
+            string result = string.Empty;
+            string ampm = s.Substring(s.Length - 2, 2);
+            string hour = s.Substring(0, 2);
+            string minutes = s.Substring(3, 2);
+            string seconds = s.Substring(6, 2);
+            int h = Convert.ToInt32(s.Substring(0, 2));
+            if (ampm == "AM")
+            {
+                if (h == 12)
+                {
+                    result = "00:" + minutes + ":" + seconds;
+                }
+                else {
+                    result = s.Substring(0, s.Length - 2);
+                }
+            }
+            else {
+                if (h >= 1)
+                {
+                    int addition = h % 12;
+                    hour = (12 + addition).ToString();
+                    result = hour + ":" + minutes + ":" + seconds;
+                }
+                else {
+                    result = "00:" + minutes + ":" + seconds;
+                }
+            }
 
-            //SumOfOneDArray objS= new SumOfOneDArray();
-            //objS.sumOfOneDArray();
+            // return result;
+            Console.WriteLine(result);
+            Console.ReadLine();
 
-            //LongestUniqueSubsttr objLngUnqsubstr = new LongestUniqueSubsttr();
-            //objLngUnqsubstr.longestUniqueSubsttr();
 
-            //AVeryBigSum objBigSum = new AVeryBigSum();
-            //objBigSum.aVeryBigSum();
 
-            //Staircase objStaircase = new Staircase();
-            //objStaircase.staircase();
-
-            //MiniMaxSum OjbMinMaxSum = new MiniMaxSum();
-            //OjbMinMaxSum.miniMaxSum();
-
-            
-            
 
             //Console.ReadLine();
         }
