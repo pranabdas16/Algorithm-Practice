@@ -120,31 +120,32 @@ namespace ConsoleApp
             //MiniMaxSum OjbMinMaxSum = new MiniMaxSum();
             //OjbMinMaxSum.miniMaxSum();
 
-            
-            
+
+            BeautifulBinaryString objBBS = new BeautifulBinaryString();
+            objBBS.beautifulBinaryString();
 
             //Console.ReadLine();
-        }
+    }
 
-        //static void reverse(int x)
-        //{
-        //    long res = 0;
-        //    while (x != 0)
-        //    {
-        //        res = res * 10 + x % 10;
-        //        x = x / 10;
-        //    }
+    //static void reverse(int x)
+    //{
+    //    long res = 0;
+    //    while (x != 0)
+    //    {
+    //        res = res * 10 + x % 10;
+    //        x = x / 10;
+    //    }
 
-        //    if (res < int.MinValue || res > int.MaxValue)
-        //    {
-        //        //return 0;
-        //        Console.Write("");
-        //    }
-        //    else {
-        //        Console.Write(res);
-        //    }
-        //}
-        static void removeDuplicate(char[] CharArry, int b)
+    //    if (res < int.MinValue || res > int.MaxValue)
+    //    {
+    //        //return 0;
+    //        Console.Write("");
+    //    }
+    //    else {
+    //        Console.Write(res);
+    //    }
+    //}
+    static void removeDuplicate(char[] CharArry, int b)
         {
             string str = new string(CharArry);
            // List<string> listStr = new List<string>(str);
