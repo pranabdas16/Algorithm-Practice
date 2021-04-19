@@ -9,8 +9,10 @@ namespace ConsoleApp.Hacker_Rank_challanges_and_extra
     class BeautifulBinaryString
     {
         /// <summary>
-        /// 
+        /// Beautiful Binary String
         /// https://www.hackerrank.com/challenges/beautiful-binary-string/problem?h_r=next-challenge&h_v=zen
+        /// BeautifulBinaryString objBBS = new BeautifulBinaryString();
+        /// objBBS.beautifulBinaryString();
         /// </summary>
         public void beautifulBinaryString()
         {

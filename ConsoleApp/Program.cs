@@ -121,8 +121,7 @@ namespace ConsoleApp
             //OjbMinMaxSum.miniMaxSum();
 
 
-            BeautifulBinaryString objBBS = new BeautifulBinaryString();
-            objBBS.beautifulBinaryString();
+           
 
             //Console.ReadLine();
     }

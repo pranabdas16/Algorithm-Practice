@@ -48,6 +48,7 @@
     <Compile Include="Hacker Rank challanges and extra\BirthdayCakeCandles.cs" />
     <Compile Include="Hacker Rank challanges and extra\BirthdayCakeCandlesOpt.cs" />
     <Compile Include="Hacker Rank challanges and extra\GradingStudents.cs" />
+    <Compile Include="Hacker Rank challanges and extra\Imp_BillDivision.cs" />
     <Compile Include="Hacker Rank challanges and extra\String_AlternatingCharacters.cs" />
     <Compile Include="Hacker Rank challanges and extra\String_BeautifulBinaryString.cs" />
     <Compile Include="Hacker Rank challanges and extra\String_Pangrams.cs" />
