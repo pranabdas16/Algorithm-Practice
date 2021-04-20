@@ -58,6 +58,7 @@
     <Compile Include="Hacker Rank challanges and extra\MinimumNumber.cs" />
     <Compile Include="Hacker Rank challanges and extra\PlusMinus.cs" />
     <Compile Include="Hacker Rank challanges and extra\Staircase.cs" />
+    <Compile Include="Hacker Rank challanges and extra\String_CamelCase.cs" />
     <Compile Include="Hacker Rank challanges and extra\SuperReducedString.cs" />
     <Compile Include="Hacker Rank challanges and extra\TimeConversion.cs" />
     <Compile Include="IntegerToRoman.cs" />
