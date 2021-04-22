@@ -120,12 +120,13 @@ namespace ConsoleApp
             //MiniMaxSum OjbMinMaxSum = new MiniMaxSum();
             //OjbMinMaxSum.miniMaxSum();
 
-
             
+            
+
             //Console.WriteLine(6%3);
 
             //Console.ReadLine();
-    }
+        }
 
     //static void reverse(int x)
     //{
