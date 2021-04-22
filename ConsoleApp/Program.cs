@@ -120,8 +120,9 @@ namespace ConsoleApp
             //MiniMaxSum OjbMinMaxSum = new MiniMaxSum();
             //OjbMinMaxSum.miniMaxSum();
 
-            
-            
+            BreakingTheRecords objBTR = new BreakingTheRecords();
+            objBTR.breakingTheRecords();
+
 
             //Console.WriteLine(6%3);
 
