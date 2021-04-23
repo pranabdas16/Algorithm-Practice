@@ -19,25 +19,24 @@ namespace ConsoleApp.Hacker_Rank_challanges_and_extra
         {
             Stopwatch objStpWatch = new Stopwatch();
             objStpWatch.Start();
-            int[] score = { 3, 4, 21, 36, 10, 28, 35, 5, 24, 42 };
+            int[] score = { 10, 5, 20, 20, 4, 5, 2, 25, 1 };  
             int gameCount = score.Length;
             int MaxScore = score[0], MinScore = score[0], MaxCount =0, MinCount =0;
-
+            int[] val = new int[2];
             for (int i = 0; i < gameCount-1; i++)
             {
                 if (score[i] > score[i + 1])
                 {
                     if (MaxScore > score[i])
                     {
-                        MaxScore = score[i];
-                        MaxCount++;
+                        //do nothing...
                     }
-                    else if (MinScore > score[i + 1])
+                    if (MinScore > score[i + 1])
                     {
                         MinScore = score[i + 1];
                         MinCount++;
                     }
-                    else if (MinScore > score[i])
+                    if (MinScore > score[i])
                     {
                         MinScore = score[i];
                         MinCount++;
@@ -47,12 +46,11 @@ namespace ConsoleApp.Hacker_Rank_challanges_and_extra
                 {
                     if (MaxScore > score[i + 1])
                     {
-                        MaxScore = score[i];
-                        MaxCount++;
+                       //do nothing...
                     }
-                    else if (MaxScore < score[i + 1])
+                    if (MaxScore < score[i + 1])
                     {
-                        MaxScore = score[i];
+                        MaxScore = score[i+1];
                         MaxCount++;
                     }
                     if (MinScore > score[i])
@@ -60,16 +58,18 @@ namespace ConsoleApp.Hacker_Rank_challanges_and_extra
                         MinScore = score[i];
                         MinCount++;
                     }
-                    else if (MinScore < score[i])
+                    if (MinScore < score[i])
                     {
-                        //MinScore = score[i];
-                        //MinCount--;
+                       // do nothing...
                     }
 
                 }
             }
+            val[0] = MaxCount;
+            val[1] = MinCount;
+            //return val;
             objStpWatch.Stop();
-            Console.WriteLine(MaxCount +","+ MinCount);
+            Console.WriteLine(MaxCount + "," + MinCount);
             Console.WriteLine(objStpWatch.ElapsedMilliseconds);
             Console.ReadLine();
         }
