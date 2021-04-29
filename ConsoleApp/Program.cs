@@ -119,13 +119,11 @@ namespace ConsoleApp
 
             //MiniMaxSum OjbMinMaxSum = new MiniMaxSum();
             //OjbMinMaxSum.miniMaxSum();
-
-
-            BeautifulBinaryString objBBS = new BeautifulBinaryString();
-            objBBS.beautifulBinaryString();
+            CaesarCipher objCC = new CaesarCipher();
+            objCC.caesarCipher();
 
             //Console.ReadLine();
-    }
+        }
 
     //static void reverse(int x)
     //{
