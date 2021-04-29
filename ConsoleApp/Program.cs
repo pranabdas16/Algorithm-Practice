@@ -119,8 +119,8 @@ namespace ConsoleApp
 
             //MiniMaxSum OjbMinMaxSum = new MiniMaxSum();
             //OjbMinMaxSum.miniMaxSum();
-            CaesarCipher objCC = new CaesarCipher();
-            objCC.caesarCipher();
+
+            //Console.WriteLine(6%3);
 
             //Console.ReadLine();
         }
