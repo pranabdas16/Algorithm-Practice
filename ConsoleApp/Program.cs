@@ -121,7 +121,8 @@ namespace ConsoleApp
             //OjbMinMaxSum.miniMaxSum();
 
             //Console.WriteLine(6%3);
-
+            ElectronicsShop objES = new ElectronicsShop();
+            objES.electronicsShop();
             //Console.ReadLine();
         }
 
