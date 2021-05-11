@@ -83,6 +83,7 @@
     <Compile Include="singleLinkedList.cs" />
     <Compile Include="Sorting\InsertionSort.cs" />
     <Compile Include="Sorting\SelectionSort.cs" />
+    <Compile Include="Sorting\SelectionSortA.cs" />
     <Compile Include="SortString.cs" />
     <Compile Include="StackExercise.cs" />
     <Compile Include="StackIntSimple.cs" />
