@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace ConsoleApp.Sorting
 {
@@ -10,7 +11,9 @@ namespace ConsoleApp.Sorting
     {
         public void insertionSort()
         {
-            double[] unsortedList = { 4, 3, 2, 10, 12, 1, 5, 6 };
+            double[] unsortedList = { 5,2,4,6,1,3};// { 4, 3, 2, 10, 12, 1, 5, 6 };
+            Stopwatch objTimeStamp = new Stopwatch();
+            objTimeStamp.Start();
             int i = 1;
             int j = i;
             double temp = 0;
@@ -28,12 +31,16 @@ namespace ConsoleApp.Sorting
                 }
                 i++;
             }
-            int k = 0;
-            while (k < unsortedList.Length)
-            {
-                Console.WriteLine(unsortedList[k]);
-                k++;
-            }
+            objTimeStamp.Stop();
+            Console.WriteLine(string.Join(",",unsortedList));
+            Console.WriteLine(objTimeStamp.ElapsedMilliseconds);
+
+            //int k = 0;
+            //while (k < unsortedList.Length)
+            //{
+              //  Console.WriteLine(unsortedList[k]);
+              //  k++;
+            //}
             Console.ReadLine();
         }
     }
