@@ -16,7 +16,7 @@ namespace ConsoleApp
             
             ///Stack exercise....
             ///integer stack
-            StackExercise obj = new StackExercise();
+           // StackExercise obj = new StackExercise();
             //obj.stackofInt();
 
             ///Stack of int Array use....
@@ -28,7 +28,7 @@ namespace ConsoleApp
             ///Single Linked list with multiple action..
             
             ///Single linked list to add 
-            LinkedList linkedList = new LinkedList();
+          //  LinkedList linkedList = new LinkedList();
             //linkedList.AddNodeToFront(5);
             //linkedList.AddNodeToFront(6);
             //linkedList.AddNodeToFront(1);
@@ -51,8 +51,8 @@ namespace ConsoleApp
             //InsertionSortA objSSA = new InsertionSortA();  //delete this line sometime
             //objSSA.insertionSortA();// delete this line sometime
 
-            BubbleSort objBS = new BubbleSort();
-            objBS.bubbleSort();
+            //BubbleSort objBS = new BubbleSort();
+            //objBS.bubbleSort();
 
             //Console.ReadLine();
         }
