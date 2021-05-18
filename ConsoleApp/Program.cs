@@ -7,6 +7,7 @@ using ConsoleApp.Simple_problem;
 using ConsoleApp.Hacker_Rank_challanges_and_extra;
 using ConsoleApp.Sorting;
 using ConsoleApp.LinkedLIst;
+using ConsoleApp.LeetCode.Easy;
 
 namespace ConsoleApp
 {
@@ -46,13 +47,17 @@ namespace ConsoleApp
 
             //Console.WriteLine(6%3);
 
-            LinkedList1 lList = new LinkedList1();
-            lList.head = new LinkedList1.Node(1);
-            LinkedList1.Node second = new LinkedList1.Node(2);
-            LinkedList1.Node third = new LinkedList1.Node(3);
+            //I need to still learn following code from linked list...
+            //LinkedList1 lList = new LinkedList1();
+            //lList.head = new LinkedList1.Node(1);
+            //LinkedList1.Node second = new LinkedList1.Node(2);
+            //LinkedList1.Node third = new LinkedList1.Node(3);
 
-            lList.head.next = second;
-            second.next = third;
+            //lList.head.next = second;
+            //second.next = third;
+
+            ReverseInteger1 objrvrs = new ReverseInteger1();
+            objrvrs.reverseInteger(123);
 
             //Console.ReadLine();
         }
@@ -63,7 +68,6 @@ namespace ConsoleApp
         {
             string str = new string(CharArry);
            // List<string> listStr = new List<string>(str);
-            string newStr="";
             //int index = 0;
             int i=0, j;
 
