@@ -9,6 +9,10 @@ namespace ConsoleApp.Sorting
 {
     class BubbleSort
     {
+        /// <summary>
+        /// BubbleSort objBS = new BubbleSort();
+        /// objBS.bubbleSort();
+        /// </summary>
         public void bubbleSort()
         { 
             int [] arr = { 64, 34, 25, 12, 22, 11, 90 };

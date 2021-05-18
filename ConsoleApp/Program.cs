@@ -46,15 +46,6 @@ namespace ConsoleApp
 
             //Console.WriteLine(6%3);
 
-            //Need to update Electronic Shop.... to pass rest of test case...
-            //ElectronicsShop objES = new ElectronicsShop();
-            //objES.electronicsShop();
-            //InsertionSortA objSSA = new InsertionSortA();  //delete this line sometime
-            //objSSA.insertionSortA();// delete this line sometime
-
-            //BubbleSort objBS = new BubbleSort();
-            //objBS.bubbleSort();
-
             LinkedList1 lList = new LinkedList1();
             lList.head = new LinkedList1.Node(1);
             LinkedList1.Node second = new LinkedList1.Node(2);
@@ -67,24 +58,7 @@ namespace ConsoleApp
         }
 
         
-        //static void reverse(int x)
-        //{
-        //    long res = 0;
-        //    while (x != 0)
-        //    {
-        //        res = res * 10 + x % 10;
-        //        x = x / 10;
-        //    }
-
-        //    if (res < int.MinValue || res > int.MaxValue)
-        //    {
-        //        //return 0;
-        //        Console.Write("");
-        //    }
-        //    else {
-        //        Console.Write(res);
-        //    }
-        //}
+        
         static void removeDuplicate(char[] CharArry, int b)
         {
             string str = new string(CharArry);
@@ -114,41 +88,6 @@ namespace ConsoleApp
 
             }
             
-                Console.Write(str);
-            
-            Console.ReadLine();
-
-
-
-            //for ( i = 0; i < b; i++)
-            //{
-            //    for ( j = i+1; j < b; j++)
-            //    {
-            //        if (str[i] == str[j])
-            //        {
-                        
-            //            break;
-            //        }
-                    
-            //    }
-            //    if(j<b)
-            //    if(str[i] == str[j])
-            //    {
-            //        //do nothhing;
-            //    }
-            //    else
-            //    str[index++] = str[i];
-            //    //if (j == i)
-            //    //{
-            //    //    str[index++] = str[i];
-            //    //}
-
-
-            //}
-            //while()
-            //for (int k = 0; k < index; k++)
-            //    Console.Write(str[index]);
-            //Console.ReadLine();
         }
     }
 }

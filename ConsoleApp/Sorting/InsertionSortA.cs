@@ -9,6 +9,10 @@ namespace ConsoleApp.Sorting
 {
     class InsertionSortA
     {
+        /// <summary>
+        /// InsertionSortA objSSA = new InsertionSortA(); 
+        /// objSSA.insertionSortA();
+        /// </summary>
         public void insertionSortA()
         {
             Stopwatch objSW = new Stopwatch();
