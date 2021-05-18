@@ -68,6 +68,7 @@
     <Compile Include="Hacker Rank challanges and extra\SuperReducedString.cs" />
     <Compile Include="Hacker Rank challanges and extra\TimeConversion.cs" />
     <Compile Include="IntegerToRoman.cs" />
+    <Compile Include="LinkedLIst\LinkedList.cs" />
     <Compile Include="LongestUniqueSubsttr.cs" />
     <Compile Include="Palindrome.cs" />
     <Compile Include="Program.cs" />

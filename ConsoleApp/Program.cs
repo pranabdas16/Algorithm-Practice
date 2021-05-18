@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ConsoleApp.Simple_problem;
 using ConsoleApp.Hacker_Rank_challanges_and_extra;
 using ConsoleApp.Sorting;
+using ConsoleApp.LinkedLIst;
 
 namespace ConsoleApp
 {
@@ -13,22 +14,22 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            
+
             ///Stack exercise....
             ///integer stack
-           // StackExercise obj = new StackExercise();
+            // StackExercise obj = new StackExercise();
             //obj.stackofInt();
 
             ///Stack of int Array use....
-           // obj.stackOfIntArry();
+            // obj.stackOfIntArry();
 
             ///Stack of String Array use...
-           // obj.stackOfStringArray();
+            // obj.stackOfStringArray();
 
             ///Single Linked list with multiple action..
-            
+
             ///Single linked list to add 
-          //  LinkedList linkedList = new LinkedList();
+            //  LinkedList linkedList = new LinkedList();
             //linkedList.AddNodeToFront(5);
             //linkedList.AddNodeToFront(6);
             //linkedList.AddNodeToFront(1);
@@ -54,28 +55,37 @@ namespace ConsoleApp
             //BubbleSort objBS = new BubbleSort();
             //objBS.bubbleSort();
 
+            LinkedList1 lList = new LinkedList1();
+            lList.head = new LinkedList1.Node(1);
+            LinkedList1.Node second = new LinkedList1.Node(2);
+            LinkedList1.Node third = new LinkedList1.Node(3);
+
+            lList.head.next = second;
+            second.next = third;
+
             //Console.ReadLine();
         }
 
-    //static void reverse(int x)
-    //{
-    //    long res = 0;
-    //    while (x != 0)
-    //    {
-    //        res = res * 10 + x % 10;
-    //        x = x / 10;
-    //    }
+        
+        //static void reverse(int x)
+        //{
+        //    long res = 0;
+        //    while (x != 0)
+        //    {
+        //        res = res * 10 + x % 10;
+        //        x = x / 10;
+        //    }
 
-    //    if (res < int.MinValue || res > int.MaxValue)
-    //    {
-    //        //return 0;
-    //        Console.Write("");
-    //    }
-    //    else {
-    //        Console.Write(res);
-    //    }
-    //}
-    static void removeDuplicate(char[] CharArry, int b)
+        //    if (res < int.MinValue || res > int.MaxValue)
+        //    {
+        //        //return 0;
+        //        Console.Write("");
+        //    }
+        //    else {
+        //        Console.Write(res);
+        //    }
+        //}
+        static void removeDuplicate(char[] CharArry, int b)
         {
             string str = new string(CharArry);
            // List<string> listStr = new List<string>(str);
