@@ -56,8 +56,7 @@ namespace ConsoleApp
             //lList.head.next = second;
             //second.next = third;
 
-            ReverseInteger1 objrvrs = new ReverseInteger1();
-            objrvrs.reverseInteger(123);
+            
 
             //Console.ReadLine();
         }
