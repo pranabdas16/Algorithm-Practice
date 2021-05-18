@@ -9,6 +9,7 @@ namespace ConsoleApp.LeetCode.Easy
    public class ReverseInteger1
     {
         /// <summary>
+        /// https://leetcode.com/problems/reverse-integer/
         /// ReverseInteger1 objrvrs = new ReverseInteger1();
         /// objrvrs.reverseInteger(123);
         /// </summary>
@@ -21,6 +22,8 @@ namespace ConsoleApp.LeetCode.Easy
                 str += x % 10;
                x= x / 10;
             }
+            int val = 0;
+            val = Convert.ToInt32(str);
             Console.WriteLine(str);
             Console.ReadLine();
             
