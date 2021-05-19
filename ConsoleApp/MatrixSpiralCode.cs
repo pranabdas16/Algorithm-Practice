@@ -27,15 +27,15 @@ namespace ConsoleApp
                 j++;
                 
             }
-            j = Cn-1;
             i = 1;
+            j = Cn-1;
             while (i < Rn)
             {
                 Console.Write(inputArray[i, j] + ",");
                 i++;
             }
-            j = Cn - 2;
             i = Rn - 1;
+            j = Cn - 2;
             while (j >= 0)
             {
                 Console.Write(inputArray[i, j] + ",");
