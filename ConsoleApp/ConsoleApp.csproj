@@ -71,6 +71,7 @@
     <Compile Include="LeetCode\Easy\ReverseInteger1.cs" />
     <Compile Include="LinkedLIst\LinkedList.cs" />
     <Compile Include="LongestUniqueSubsttr.cs" />
+    <Compile Include="MatrixSpiralCode.cs" />
     <Compile Include="Palindrome.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

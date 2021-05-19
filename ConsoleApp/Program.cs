@@ -56,7 +56,8 @@ namespace ConsoleApp
             //lList.head.next = second;
             //second.next = third;
 
-            
+            MatrixSpiralCode objMSC = new MatrixSpiralCode();
+            objMSC.matrixspiralCode();
 
             //Console.ReadLine();
         }
