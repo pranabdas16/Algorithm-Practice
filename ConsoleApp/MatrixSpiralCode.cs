@@ -21,50 +21,50 @@ namespace ConsoleApp
             int Rn = inputArray.GetLength(0);
             int Cn = inputArray.GetLength(1);
             int i = 0, j = 0;
-            while (j < Cn)
+            while (j < Cn)   //Step 1
             {
                 Console.Write(inputArray[i, j] + ",");
                 j++;
                 
             }
             i = 1;
-            j = Cn-1;
-            while (i < Rn)
+            j = Cn-1; //=4
+            while (i < Rn)   //Step 2
             {
                 Console.Write(inputArray[i, j] + ",");
                 i++;
             }
-            i = Rn - 1;
-            j = Cn - 2;
-            while (j >= 0)
+            i = Rn - 1;  // = 3
+            j = Cn - 2;  // = 3
+            while (j >= 0)   //Step 3
             {
                 Console.Write(inputArray[i, j] + ",");
                 j--;
             }
-            i = Rn - 2;
+            i = Rn - 2;  // = 2
             j = 0;
-            while (i > 0)
+            while (i > 0)   //Step 4
             {
                 Console.Write(inputArray[i, j] + ",");
                 i--;
             }
             i = 1;
             j = 1;
-            while (j <= Cn - 2)
+            while (j <= Cn - 2)  //Step 5
             {
                 Console.Write(inputArray[i, j] + ",");
                 j++;
             }
             i = 2;
             j = 3;
-            while (i < Rn -1)
+            while (i < Rn -1)  //Step 6
             {
                 Console.Write(inputArray[i, j] + ",");
                 i++;
             }
             i = 2;
-            j = Cn - 3;
-            while (j > Cn-5 )
+            j = Cn - 3; // = 2
+            while (j > Cn-5 )  //step 7
             {
                 Console.Write(inputArray[i, j] + ",");
                 j--;
