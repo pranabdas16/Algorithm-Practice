@@ -9,6 +9,7 @@ using ConsoleApp.Sorting;
 using ConsoleApp.LinkedLIst;
 using ConsoleApp.LeetCode.Easy;
 using ConsoleApp.Sanfoundry;
+using ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays;
 
 namespace ConsoleApp
 {
@@ -78,13 +79,45 @@ namespace ConsoleApp
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("*****************************");
-            
+            //Console.WriteLine("Enter single character for comparision:");
+            //char ch = 'c';
+            //char Firstchar = Convert.ToChar(Console.ReadLine());
+
+            //Console.WriteLine("Enter Second character for comparision:");
+            //char Secondchar = Convert.ToChar(Console.ReadLine());
+
+            //if (Firstchar > Secondchar)
+            //{ Console.WriteLine("True"); }
+            //else
+            //  Console.WriteLine("False");
+
+            LinkedListt llistt = new LinkedListt();
+            //llistt.; = new 
+
+            LeftRotation objLeftRotatin = new LeftRotation();
+            objLeftRotatin.leftRotation();
 
             Console.ReadKey();
             Console.ReadLine();
         }
 
-        
+        public class LinkedListt 
+        {
+            Node head;
+            public class Node {
+                public int data;
+                public Node next;
+                public Node(int d)
+                {
+                    data = d;
+                    next = null;
+                }
+            
+            }
+        }
+
+
+
         
         static void removeDuplicate(char[] CharArry, int b)
         {

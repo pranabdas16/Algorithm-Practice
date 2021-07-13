@@ -45,10 +45,12 @@
   <ItemGroup>
     <Compile Include="commonPrefix.cs" />
     <Compile Include="Hacker Rank challanges and extra\AppleAndOrange.cs" />
+    <Compile Include="Hacker Rank challanges and extra\Arrays\LeftRotation.cs" />
     <Compile Include="Hacker Rank challanges and extra\BirthdayCakeCandles.cs" />
     <Compile Include="Hacker Rank challanges and extra\BirthdayCakeCandlesOpt.cs" />
     <Compile Include="Hacker Rank challanges and extra\CaesarCipher.cs" />
     <Compile Include="Hacker Rank challanges and extra\GradingStudents.cs" />
+    <Compile Include="Hacker Rank challanges and extra\Greedy\GridChallenge.cs" />
     <Compile Include="Hacker Rank challanges and extra\Greedy\MarcCakeWalk.cs" />
     <Compile Include="Hacker Rank challanges and extra\Impl_BreakingTheRecords.cs" />
     <Compile Include="Hacker Rank challanges and extra\Impl_CountingValleys.cs" />
@@ -103,6 +105,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="111FailedOrHalfPassedCode.txt" />
     <Content Include="FibonaciiSeries.txt" />
     <Content Include="Number Pyramid.txt" />
     <Content Include="OneSideStarPyramid.txt" />
