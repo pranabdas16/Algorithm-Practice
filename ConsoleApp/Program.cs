@@ -8,6 +8,7 @@ using ConsoleApp.Hacker_Rank_challanges_and_extra;
 using ConsoleApp.Sorting;
 using ConsoleApp.LinkedLIst;
 using ConsoleApp.LeetCode.Easy;
+using ConsoleApp.Sanfoundry;
 
 namespace ConsoleApp
 {
@@ -56,10 +57,31 @@ namespace ConsoleApp
             //lList.head.next = second;
             //second.next = third;
 
-            MatrixSpiralCode objMSC = new MatrixSpiralCode();
-            objMSC.matrixspiralCode();
+            //MatrixSpiralCode objMSC = new MatrixSpiralCode();
+            //objMSC.matrixspiralCode();
 
-            //Console.ReadLine();
+            int[] arr = { 1, 2, 3, 4, 5, 6,7};
+            int mid = 1 + (arr.Length - 1) / 2;
+            int x = 3;
+            int val = -1;
+            Console.WriteLine("Mid value of of array : " + mid);
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == x)
+                {
+                    val = i;
+                }
+            }
+            Console.WriteLine("Linear search for given array: " + val);
+            Console.WriteLine("Power value of 2 ^ 4 is here:"  + Math.Pow(2, 4));
+            Console.WriteLine("*****************************");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("*****************************");
+            
+
+            Console.ReadKey();
+            Console.ReadLine();
         }
 
         

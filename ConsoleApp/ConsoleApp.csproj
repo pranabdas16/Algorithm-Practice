@@ -49,6 +49,7 @@
     <Compile Include="Hacker Rank challanges and extra\BirthdayCakeCandlesOpt.cs" />
     <Compile Include="Hacker Rank challanges and extra\CaesarCipher.cs" />
     <Compile Include="Hacker Rank challanges and extra\GradingStudents.cs" />
+    <Compile Include="Hacker Rank challanges and extra\Greedy\MarcCakeWalk.cs" />
     <Compile Include="Hacker Rank challanges and extra\Impl_BreakingTheRecords.cs" />
     <Compile Include="Hacker Rank challanges and extra\Impl_CountingValleys.cs" />
     <Compile Include="Hacker Rank challanges and extra\Impl_DivisibleSumPairs.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Hacker Rank challanges and extra\listSample.cs" />
     <Compile Include="Hacker Rank challanges and extra\SimpleArraySum.cs" />
     <Compile Include="Hacker Rank challanges and extra\TwoDArray.cs" />
+    <Compile Include="Sanfoundry\MatrixAdd.cs" />
     <Compile Include="singleLinkedList.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\InsertionSort.cs" />
@@ -108,7 +110,9 @@
     <Content Include="ShortString.txt" />
     <Content Include="TextFile1.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Hacker Rank challanges and extra\Warmup\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
