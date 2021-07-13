@@ -11,11 +11,11 @@ namespace ConsoleApp.Sorting
     {
         public void insertionSort()
         {
-            double[] unsortedList = { 5,2,4,6,1,3};// { 4, 3, 2, 10, 12, 1, 5, 6 };
+            double[] unsortedList = { 10, 4, 8, 6, 7};// { 5,2,4,6,1,3};// { 4, 3, 2, 10, 12, 1, 5, 6 };
             Stopwatch objTimeStamp = new Stopwatch();
             objTimeStamp.Start();
-            int i = 1;
-            int j = i;
+            int i = 1; // Index of element to be moved back
+            int j = i; //
             double temp = 0;
 
             while (i < unsortedList.Length)

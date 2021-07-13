@@ -14,7 +14,7 @@ namespace ConsoleApp.LeetCode.Easy
         /// objrvrs.reverseInteger(123);
         /// </summary>
         /// <param name="x"></param>
-        public void reverseInteger(int x)
+        public void reverseInteger(double x)
         {
             string str="";
             while (x != 0) // 123
@@ -22,8 +22,8 @@ namespace ConsoleApp.LeetCode.Easy
                 str += x % 10;
                x= x / 10;
             }
-            int val = 0;
-            val = Convert.ToInt32(str);
+            double val = 0;
+            val = Convert.ToDouble(str);
             Console.WriteLine(str);
             Console.ReadLine();
             
