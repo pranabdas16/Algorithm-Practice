@@ -75,6 +75,7 @@
     <Compile Include="LinkedLIst\LinkedList.cs" />
     <Compile Include="LongestUniqueSubsttr.cs" />
     <Compile Include="MatrixSpiralCode.cs" />
+    <Compile Include="MatrixTicTacToe.cs" />
     <Compile Include="Palindrome.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

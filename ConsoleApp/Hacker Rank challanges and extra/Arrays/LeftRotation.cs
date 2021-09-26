@@ -13,6 +13,10 @@ namespace ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays
     /// following is the link for performance benchmark
     /// https://support.hackerrank.com/hc/en-us/articles/1500002392722-Execution-Environment
     /// </summary>
+    /// for call in Program file
+    /// LeftRotation objLeftRotatin = new LeftRotation();
+    //        objLeftRotatin.leftRotation();
+
     class LeftRotation
     {
         public void leftRotation()

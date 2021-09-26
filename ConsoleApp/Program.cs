@@ -94,8 +94,8 @@ namespace ConsoleApp
             LinkedListt llistt = new LinkedListt();
             //llistt.; = new 
 
-            LeftRotation objLeftRotatin = new LeftRotation();
-            objLeftRotatin.leftRotation();
+            MatrixTicTacToe objTicTacToe = new MatrixTicTacToe();
+            objTicTacToe.matrixTicTacToe();
 
             Console.ReadKey();
             Console.ReadLine();
