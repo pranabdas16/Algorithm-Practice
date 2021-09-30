@@ -10,6 +10,7 @@ using ConsoleApp.LinkedLIst;
 using ConsoleApp.LeetCode.Easy;
 using ConsoleApp.Sanfoundry;
 using ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays;
+using ConsoleApp.Search;
 
 namespace ConsoleApp
 {
@@ -94,9 +95,12 @@ namespace ConsoleApp
             LinkedListt llistt = new LinkedListt();
             //llistt.; = new 
 
-            MatrixTicTacToe objTicTacToe = new MatrixTicTacToe();
-            objTicTacToe.matrixTicTacToe();
+            //MatrixTicTacToe objTicTacToe = new MatrixTicTacToe();
+            //objTicTacToe.matrixTicTacToe();
 
+            LinearSearch1 objLinearSearch1 = new LinearSearch1();
+            objLinearSearch1.linearSearchMain();
+ 
             Console.ReadKey();
             Console.ReadLine();
         }
