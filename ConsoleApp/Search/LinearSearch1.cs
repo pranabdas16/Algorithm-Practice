@@ -12,7 +12,7 @@ namespace ConsoleApp.Search
         {
             Console.WriteLine("Please enter input search item:");
             int serachItem = int.Parse(Console.ReadLine());
-            int[] arr = { 3, 5, 6, 7, 10, 12, 50, 55, 66, 70};
+            int[] arr = { 3, 5, 6, 7, };// 10, 12, 50, 55, 66, 70};
             //if ()
           int result =  LinearSearchRecover(arr, 0, serachItem);
             if (result < 0)
