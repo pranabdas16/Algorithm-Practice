@@ -11,6 +11,7 @@ using ConsoleApp.LeetCode.Easy;
 using ConsoleApp.Sanfoundry;
 using ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays;
 using ConsoleApp.Search;
+using ConsoleApp.Array.JaggedArray;
 
 namespace ConsoleApp
 {
@@ -62,20 +63,7 @@ namespace ConsoleApp
             //MatrixSpiralCode objMSC = new MatrixSpiralCode();
             //objMSC.matrixspiralCode();
 
-            int[] arr = { 1, 2, 3, 4, 5, 6,7};
-            int mid = 1 + (arr.Length - 1) / 2;
-            int x = 3;
-            int val = -1;
-            Console.WriteLine("Mid value of of array : " + mid);
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] == x)
-                {
-                    val = i;
-                }
-            }
-            Console.WriteLine("Linear search for given array: " + val);
-            Console.WriteLine("Power value of 2 ^ 4 is here:"  + Math.Pow(2, 4));
+            
             Console.WriteLine("*****************************");
             Console.WriteLine();
             Console.WriteLine();
@@ -98,9 +86,104 @@ namespace ConsoleApp
             //MatrixTicTacToe objTicTacToe = new MatrixTicTacToe();
             //objTicTacToe.matrixTicTacToe();
 
-            LinearSearch1 objLinearSearch1 = new LinearSearch1();
-            objLinearSearch1.linearSearchMain();
- 
+            // new linear search....
+            //LinearSearch1 objLinearSearch1 = new LinearSearch1();
+            //objLinearSearch1.linearSearchMain();
+
+
+            //string parenthesis = "(()";
+            //Stack<char> objStack = new Stack<char>(parenthesis);
+
+            //for ( int i = 0; i <= objStack.Count-1; i++)
+            //{
+            //    if (objStack<char>[i] == '(')
+            //    { 
+
+            //    }
+            //}
+
+            // int[] nums1 = {3, 1, 2, 4 };
+            //SortArrayByParity(nums1);
+
+            //int[] SortArrayByParity(int[] nums )
+            //{
+            //    int[] reultArray = new int[nums.Length];
+            //    int k = 0;
+            //    for (int i = 0; i < nums.Length; i++)
+            //    {
+            //        if (nums[i] % 2 == 0)
+            //        {
+            //            reultArray[k] = nums[i];
+
+            //            k++;
+            //        }
+            //    }
+
+            //    for (int j = 0; j < nums.Length; j++)
+            //    {
+            //        if (nums[j] % 2 == 1)
+            //        {
+            //            reultArray[k] = nums[j];
+
+            //            k++;
+            //        }
+            //    }
+
+            //    Console.WriteLine(string.Join(",", reultArray));
+            //    return reultArray;
+            //}
+            Console.WriteLine("*********************Start Transpose need to move in the class*******************************");
+            int[,] matrix1 = { { 2, 4, -1 }, { -10, 5, 11}, { 18, -7, 6} };
+            Transpose(matrix1);
+
+            void Transpose(int[,] matrix)
+            {
+
+                int[,] matrixArray = matrix;
+                //int[,] ansMatrix = new //new int[3,3];
+                int row = matrixArray.GetLength(0);
+                int col = matrixArray.GetLength(1);
+                int[,] ansMatrix = new int[row, col];
+
+                //  00 01 02  ij ij ij  xy xy xy  2, 4, -1      2  -10  18
+                //  10 11 12  ij ij ij  xy xy xy -10, 5, 11     4   5   -7
+                //  20 21 22  ij ij ij  xy xy xy  18 -7, 6     -1   11   6
+
+                int x1 = 0;
+                int y = 0;
+                for (int j = 0; j < col; j++)
+                {
+
+                    for (int i = 0; i < row; i++)
+                    {
+                        ansMatrix[y, x1] = matrixArray[j, i];
+                        x1++;
+                        if (x1 == 3)
+                            x1 = 0;
+                    }
+                    y++;
+                    if (y == 3)
+                        y = 0;
+                }
+
+                for (int j = 0; j < col; j++)
+                {
+                    for (int i = 0; i < row; i++)
+                    {
+                        Console.Write(ansMatrix[i,j] + ",");
+                    }
+                    Console.WriteLine();
+                }
+                
+            }
+
+            Console.WriteLine("*********************End Transpose need to move in the class*******************************");
+
+            TransponseMatrix1 transponseMatrix = new TransponseMatrix1();
+           int [][] inptArray = transponseMatrix.transposeMatrix();
+
+            int removeThis = 0;
+
             Console.ReadKey();
             Console.ReadLine();
         }

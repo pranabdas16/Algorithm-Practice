@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array\JaggedArray\FlipAndInvertImage1.cs" />
+    <Compile Include="Array\JaggedArray\TransponseMatrix1.cs" />
     <Compile Include="commonPrefix.cs" />
     <Compile Include="Hacker Rank challanges and extra\AppleAndOrange.cs" />
     <Compile Include="Hacker Rank challanges and extra\Arrays\LeftRotation.cs" />
@@ -72,6 +74,7 @@
     <Compile Include="Hacker Rank challanges and extra\TimeConversion.cs" />
     <Compile Include="IntegerToRoman.cs" />
     <Compile Include="LeetCode\Easy\ReverseInteger1.cs" />
+    <Compile Include="LeetCode\Walbreak\SortArrayByParity.cs" />
     <Compile Include="LinkedLIst\LinkedList.cs" />
     <Compile Include="LongestUniqueSubsttr.cs" />
     <Compile Include="MatrixSpiralCode.cs" />
@@ -92,7 +95,9 @@
     <Compile Include="Sanfoundry\MatrixSubtract.cs" />
     <Compile Include="Search\BinarySearch1.cs" />
     <Compile Include="Search\LinearSearch1.cs" />
+    <Compile Include="Search\LinearSearch2.cs" />
     <Compile Include="singleLinkedList.cs" />
+    <Compile Include="Sorting\ArrBubbleSort.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\InsertionSort.cs" />
     <Compile Include="Sorting\InsertionSortA.cs" />

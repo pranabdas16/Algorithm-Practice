@@ -44,11 +44,8 @@ namespace ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays
                         }
                             j++;
                     }
-                ///
                 k--;
-                
-                Array.Copy(SecondArray, inputArray, inputArray.Length);
-                
+                System.Array.Copy(SecondArray, inputArray, inputArray.Length);
             }
             for (int i = 0; i < inputArray.Length; i++)
             {
