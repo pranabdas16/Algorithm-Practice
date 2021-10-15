@@ -73,7 +73,12 @@
     <Compile Include="Hacker Rank challanges and extra\SuperReducedString.cs" />
     <Compile Include="Hacker Rank challanges and extra\TimeConversion.cs" />
     <Compile Include="IntegerToRoman.cs" />
+    <Compile Include="LeetCode\Easy\FizzBuzz.cs" />
+    <Compile Include="LeetCode\Easy\PlusOneOnline.cs" />
     <Compile Include="LeetCode\Easy\ReverseInteger1.cs" />
+    <Compile Include="LeetCode\Easy\TitleToNumber.cs" />
+    <Compile Include="LeetCode\Walbreak\PlusOne.cs" />
+    <Compile Include="LeetCode\Walbreak\SearchingChallenge.cs" />
     <Compile Include="LeetCode\Walbreak\SortArrayByParity.cs" />
     <Compile Include="LinkedLIst\LinkedList.cs" />
     <Compile Include="LongestUniqueSubsttr.cs" />

@@ -12,6 +12,7 @@ using ConsoleApp.Sanfoundry;
 using ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays;
 using ConsoleApp.Search;
 using ConsoleApp.Array.JaggedArray;
+using ConsoleApp.LeetCode.Walbreak;
 
 namespace ConsoleApp
 {
@@ -179,8 +180,50 @@ namespace ConsoleApp
 
             Console.WriteLine("*********************End Transpose need to move in the class*******************************");
 
-            TransponseMatrix1 transponseMatrix = new TransponseMatrix1();
-           int [][] inptArray = transponseMatrix.transposeMatrix();
+            // TransponseMatrix1 transponseMatrix = new TransponseMatrix1();
+            //int [][] inptArray = transponseMatrix.transposeMatrix();
+
+            //  PlusOne objPlusOne = new PlusOne();
+            //int [] resultArray =  objPlusOne.plusOne();
+
+            //SearchingChallenge objsearchingChallenge = new SearchingChallenge();
+            //objsearchingChallenge.searchingChallenge();
+
+            string[] objString = new string[] { "01111", "01101", "00011", "11110" };
+            
+            
+
+            char[][] result = objString.Select(item => item.ToArray()).ToArray();
+
+            int row2 = objString.Length;
+            int col2 = objString[0].Length;
+
+            char[,] solchar = new char[row2, col2];
+
+            int[,] solArray = new int[row2, col2];
+
+            for (int i = 0; i < row2; i++ )
+            {
+                for (int j = 0; j < result[i].Length; j++)
+                {
+                    solArray[i, j] = Convert.ToInt32(result[i][j]);
+                   // solchar = (objString[i, j]);
+                    // string str = objString[i, j];
+                    //solArray[i, j] = Convert.ToInt32(str);
+
+                }
+            }
+
+            FizzBuzz objFizzBuzz = new FizzBuzz();
+            objFizzBuzz.fizzBuzz(3);
+
+            TitleToNumber objTitleToNumber = new TitleToNumber();
+            objTitleToNumber.titleToNumber("AC");
+
+
+
+
+
 
             int removeThis = 0;
 
