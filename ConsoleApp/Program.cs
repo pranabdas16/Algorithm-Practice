@@ -220,7 +220,9 @@ namespace ConsoleApp
             TitleToNumber objTitleToNumber = new TitleToNumber();
             objTitleToNumber.titleToNumber("AC");
 
-
+            char[] s = { 'H', 'e', 'l', 'l', 'o' };
+            ReverseStringleetCode objreverseStringleetCode = new ReverseStringleetCode();
+            objreverseStringleetCode.reverseString(s);
 
 
 
