@@ -46,6 +46,7 @@
     <Compile Include="Array\JaggedArray\FlipAndInvertImage1.cs" />
     <Compile Include="Array\JaggedArray\TransponseMatrix1.cs" />
     <Compile Include="commonPrefix.cs" />
+    <Compile Include="DS\DictionaryOne.cs" />
     <Compile Include="Hacker Rank challanges and extra\AppleAndOrange.cs" />
     <Compile Include="Hacker Rank challanges and extra\Arrays\LeftRotation.cs" />
     <Compile Include="Hacker Rank challanges and extra\BirthdayCakeCandles.cs" />

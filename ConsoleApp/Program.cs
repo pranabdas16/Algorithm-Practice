@@ -13,6 +13,7 @@ using ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays;
 using ConsoleApp.Search;
 using ConsoleApp.Array.JaggedArray;
 using ConsoleApp.LeetCode.Walbreak;
+using ConsoleApp.DS;
 
 namespace ConsoleApp
 {
@@ -227,6 +228,10 @@ namespace ConsoleApp
             ReverseWords objreverseWords = new ReverseWords();
             objreverseWords.reverseWords("blank");
 
+            DictionaryOne objDicOne = new DictionaryOne();
+            objDicOne.dictionaryOne();
+
+
             int removeThis = 0;
 
            // Console.ReadKey();
@@ -247,9 +252,6 @@ namespace ConsoleApp
             
             }
         }
-
-
-
         
         static void removeDuplicate(char[] CharArry, int b)
         {
