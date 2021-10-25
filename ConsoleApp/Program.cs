@@ -14,6 +14,7 @@ using ConsoleApp.Search;
 using ConsoleApp.Array.JaggedArray;
 using ConsoleApp.LeetCode.Walbreak;
 using ConsoleApp.DS;
+using ConsoleApp.LeetCode.Medium;
 
 namespace ConsoleApp
 {
@@ -214,9 +215,6 @@ namespace ConsoleApp
 
                 }
             }
-            ///check and remove following............................. 
-            //FizzBuzz objFizzBuzz = new FizzBuzz();
-            //objFizzBuzz.fizzBuzz(3);
 
             //TitleToNumber objTitleToNumber = new TitleToNumber();
             //objTitleToNumber.titleToNumber("AC");
@@ -225,13 +223,17 @@ namespace ConsoleApp
             //ReverseStringleetCode objreverseStringleetCode = new ReverseStringleetCode();
             //objreverseStringleetCode.reverseString(s);
 
-            ReverseWords objreverseWords = new ReverseWords();
-            objreverseWords.reverseWords("blank");
+            // Need to work on this......
+            //ReverseWords objreverseWords = new ReverseWords();
+            //objreverseWords.reverseWords("blank");
 
-            DictionaryOne objDicOne = new DictionaryOne();
-            objDicOne.dictionaryOne();
+            CountPairs objCountPairs = new CountPairs();
+            objCountPairs.countPairs();//[ 1, 3, 5, 7, 9 ] );
 
-
+            Console.WriteLine( Math.Pow(2, 1));
+            Console.WriteLine(Math.Pow(2, 2));
+            Console.WriteLine(Math.Pow(2, 3));
+            Console.WriteLine(6%2);
             int removeThis = 0;
 
            // Console.ReadKey();
