@@ -227,13 +227,19 @@ namespace ConsoleApp
             //ReverseWords objreverseWords = new ReverseWords();
             //objreverseWords.reverseWords("blank");
 
-            CountPairs objCountPairs = new CountPairs();
-            objCountPairs.countPairs();//[ 1, 3, 5, 7, 9 ] );
+            //CountPairs objCountPairs = new CountPairs();
+            //objCountPairs.countPairs();//[ 1, 3, 5, 7, 9 ] );
 
+            CountGoodNumbers objGoodNumbers = new CountGoodNumbers();
+            objGoodNumbers.countGoodNumbers(2);
+            //objGoodNumbers.IsPrimeNumber(1);
+
+            /*
             Console.WriteLine( Math.Pow(2, 1));
             Console.WriteLine(Math.Pow(2, 2));
             Console.WriteLine(Math.Pow(2, 3));
             Console.WriteLine(6%2);
+            */
             int removeThis = 0;
 
            // Console.ReadKey();
