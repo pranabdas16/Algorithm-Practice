@@ -84,7 +84,7 @@
     <Compile Include="LeetCode\Medium\CountGoodNumbers.cs" />
     <Compile Include="LeetCode\Medium\countGoodNumbers1.cs" />
     <Compile Include="LeetCode\Medium\CountPairs.cs" />
-    <Compile Include="LeetCode\ValidNumber.cs" />
+    <Compile Include="LeetCode\Hard\ValidNumber.cs" />
     <Compile Include="LeetCode\Walbreak\PlusOne.cs" />
     <Compile Include="LeetCode\Walbreak\SearchingChallenge.cs" />
     <Compile Include="LeetCode\Walbreak\SortArrayByParity.cs" />

@@ -30,8 +30,15 @@ namespace ConsoleApp.LeetCode.Medium
                     strMaxLmt = strMaxLmt + "9";
                     i++;
                 }
-                minLmt = int.Parse(strMinLmt);
-                maxLmt = int.Parse(strMaxLmt);
+                try
+                {
+                    minLmt = Int64.Parse(strMinLmt);
+                    maxLmt = Int64.Parse(strMaxLmt);
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("Here is the error: {0}", ex);
+                }
             }
             //int givenNum = 11;
             if (n == 1)
