@@ -44,6 +44,22 @@ namespace ConsoleAppSingleLL
 
             objMyLL.Print();
 
+            SingleNode objSingleNode = new SingleNode(101);
+
+            Console.WriteLine("**********************************************************************************");
+            Console.WriteLine("**********************************************************************************");
+
+            SinglLinkedList objSLL = new SinglLinkedList();
+            objSLL.AddLast(101);
+            objSLL.AddLast(102);
+            objSLL.AddFront(100);
+
+            objSLL.Print();
+            Console.WriteLine();
+            // objSLL.RemoveFirst();
+            objSLL.RemoveLast();
+
+            objSLL.Print();
 
             Console.ReadLine();
             
