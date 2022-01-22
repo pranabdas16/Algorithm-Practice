@@ -8,9 +8,16 @@ namespace ConsoleAppSingleLL
 {
     public class SingleNode
     {
-        public SingleNode next;
+        //public SingleNode next;
+        public SingleNode next { 
+            get; 
+            set;
+        }
         public int data;
+        //public SingleNode()
+        //{ 
 
+        //}
         public SingleNode(int x)
         {
             data = x;
@@ -22,6 +29,8 @@ namespace ConsoleAppSingleLL
         {
             if (next == null)
             {
+                //next.data = data;
+                //next.next = null;
                 next = new SingleNode(data);
             }
             else
@@ -45,7 +54,7 @@ namespace ConsoleAppSingleLL
    public class SinglLinkedList
     {
         public SingleNode headNode;
-
+        int count = 0;
         public SinglLinkedList()
         {
             headNode = null;
@@ -67,7 +76,7 @@ namespace ConsoleAppSingleLL
         {
             if (headNode == null)
             {
-                headNode = new SingleNode(data);
+               headNode = new SingleNode(data);
             }
             else
             {
@@ -88,15 +97,46 @@ namespace ConsoleAppSingleLL
 
         public void RemoveLast()
         {
-            //if (headNode.next == null)
+            //SingleNode objHead = headNode; 
+            //while (headNode.next.next != null)
             //{
-            //    this.headNode = null;
+            //    //this.headNode.next.data = 0;
+
+            //    headNode = headNode.next;
             //}
-            //else
-            //{
-            //    _ = headNode.next;
-            //    RemoveLast();
-            //}
+            //headNode.next = null;
+            //headNode = objHead;
+
+
+            SingleNode temp = headNode;
+            if (headNode.next == null && count == 0)
+            {
+                this.headNode= null;
+                count++;
+            }
+            else
+            {
+                headNode = headNode.next;
+                RemoveLast();
+            }
+
+            headNode = temp;
+        }
+        public void Reverse()
+        {
+            SingleNode currentNode, NextNode = null, PreviousNode =null;
+            currentNode = headNode;
+            while (currentNode  != null)
+            {
+                
+                NextNode = currentNode.next;
+                currentNode.next = PreviousNode;
+                PreviousNode = currentNode;
+
+                currentNode = NextNode;
+
+            }
+            headNode = PreviousNode;
         }
 
         public void Print()

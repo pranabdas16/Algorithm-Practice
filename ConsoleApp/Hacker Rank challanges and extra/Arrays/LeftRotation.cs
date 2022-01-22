@@ -45,6 +45,7 @@ namespace ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays
                             j++;
                     }
                 k--;
+                //This should copy of array without ref copy......
                 System.Array.Copy(SecondArray, inputArray, inputArray.Length);
             }
             for (int i = 0; i < inputArray.Length; i++)
