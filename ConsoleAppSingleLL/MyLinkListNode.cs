@@ -18,12 +18,12 @@ namespace ConsoleAppSingleLL
 
         public void print()
         {
-            Console.Write("|" + data + "|-> ");
+           Console.Write("|" + data + "|-> ");
             if (next != null)
             {
+
                 next.print();
             }
-
         }
 
         public void AddToEnd(int data)

@@ -1,5 +1,6 @@
 ﻿using System;
 using ConsoleAppSingleLL;
+using ConsoleAppSingleLL1;
 
 namespace ConsoleAppSingleLL
 {
@@ -86,7 +87,7 @@ namespace ConsoleAppSingleLL
             //objSLL.Print();
             Console.WriteLine();
             Console.WriteLine("************************************************************************************");
-           // objSLL.Reverse();
+            // objSLL.Reverse();
 
             //objSLL.Print();
             //Console.WriteLine();
@@ -106,7 +107,42 @@ namespace ConsoleAppSingleLL
             //objSlyNode.AddToEnd(10);
             //objSlyNode.AddToEnd(12);
             //objSlyNode.Print();
+            //SingleLinkedList1 obj = new SingleLinkedList1();
+            //obj.AddFront(10);
+            //obj.AddFront(8);
+            //obj.AddFront(1);
+            //obj.Print();
+            //obj.AddLast(11);
+            //obj.Print();
 
+            SingleLinkedList2 objSSL2 = new SingleLinkedList2();
+            objSSL2.PrintList();
+           // objSSL2.AddTohead(15);
+            //objSSL2.AddTohead(10);
+            //objSSL2.AddTohead(12);
+            objSSL2.PrintList();
+            Console.WriteLine();
+            objSSL2.AddToLast(15);
+            objSSL2.AddToLast2(12);
+            objSSL2.AddToLast(10);
+            objSSL2.AddToLast2(7);
+            objSSL2.AddToLast(6);
+            objSSL2.AddToLast2(2);
+            objSSL2.PrintList();
+            objSSL2.SortAssending();
+            Console.WriteLine();
+            Console.WriteLine("Below is sorted linked list:");
+            objSSL2.PrintList();
+
+            Console.WriteLine();
+            Console.WriteLine("**************************Linked List 3*************************");
+            Console.WriteLine();
+            SingleLinkedList3 objSSL3 = new SingleLinkedList3();
+            objSSL3.AddToFront(5);
+            objSSL3.AddToEnd(9);
+            objSSL3.AddToFront(3);
+            objSSL3.AddToEnd(15);
+            objSSL3.Print();
             Console.ReadLine();
             
         }
