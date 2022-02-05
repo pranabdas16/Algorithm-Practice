@@ -47,13 +47,6 @@ namespace ConsoleAppSingleLL
 
             //SingleNode objSingleNode = new SingleNode();
 
-            singleListNode objSingleNode = new singleListNode(7);
-            objSingleNode.AddToEnd(8);
-            objSingleNode.AddToEnd(10);
-            objSingleNode.AddToEnd(12);
-
-            objSingleNode.Print();
-
             Console.WriteLine();
             Console.WriteLine("**********************************************************************************");
             Console.WriteLine("**********************************************************************************");
@@ -115,34 +108,44 @@ namespace ConsoleAppSingleLL
             //obj.AddLast(11);
             //obj.Print();
 
-            SingleLinkedList2 objSSL2 = new SingleLinkedList2();
-            objSSL2.PrintList();
+            //SingleLinkedList2 objSSL2 = new SingleLinkedList2();
+            //objSSL2.PrintList();
            // objSSL2.AddTohead(15);
             //objSSL2.AddTohead(10);
             //objSSL2.AddTohead(12);
-            objSSL2.PrintList();
+           // objSSL2.PrintList();
             Console.WriteLine();
-            objSSL2.AddToLast(15);
-            objSSL2.AddToLast2(12);
-            objSSL2.AddToLast(10);
-            objSSL2.AddToLast2(7);
-            objSSL2.AddToLast(6);
-            objSSL2.AddToLast2(2);
-            objSSL2.PrintList();
-            objSSL2.SortAssending();
+            //objSSL2.AddToLast(15);
+            //objSSL2.AddToLast2(12);
+            //objSSL2.AddToLast(10);
+            //objSSL2.AddToLast2(7);
+            //objSSL2.AddToLast(6);
+            //objSSL2.AddToLast2(2);
+            //objSSL2.PrintList();
+            //objSSL2.SortAssending();
             Console.WriteLine();
-            Console.WriteLine("Below is sorted linked list:");
-            objSSL2.PrintList();
+            //Console.WriteLine("Below is sorted linked list:");
+            //objSSL2.PrintList();
 
             Console.WriteLine();
             Console.WriteLine("**************************Linked List 3*************************");
+            SingleLinkedList5 SSL5 = new SingleLinkedList5();
+            SSL5.AddToFront(4);
+            SSL5.AddToFront(5);
+            SSL5.AddToTail(6);
+            SSL5.PrintList();
             Console.WriteLine();
-            SingleLinkedList3 objSSL3 = new SingleLinkedList3();
-            objSSL3.AddToFront(5);
-            objSSL3.AddToEnd(9);
-            objSSL3.AddToFront(3);
-            objSSL3.AddToEnd(15);
-            objSSL3.Print();
+            Console.WriteLine("***");
+            //SSL4.AddtoFrontWithougHead(7);
+            SSL5.AddToTail(7);
+            SSL5.AddToTail(9);
+
+            SSL5.PrintList();
+
+            SSL5.reverseList();
+            Console.WriteLine();
+            Console.WriteLine("***");
+            SSL5.PrintList();
             Console.ReadLine();
             
         }

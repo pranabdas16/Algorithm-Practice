@@ -14,8 +14,8 @@ namespace ConsoleApp.Sorting
         /// objBS.bubbleSort();
         /// </summary>
         public void bubbleSort()
-        { 
-            int [] arr = { 64, 34, 25, 12, 22, 11, 90 };
+        {
+            int[] arr = { 15, 12, 10, 7, 6, 2 };// { 64, 34, 25, 12, 22, 11, 90 };
             int n = arr.Length;
 
             for (int i = 0; i < n - 1; i++)
