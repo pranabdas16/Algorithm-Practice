@@ -15,6 +15,7 @@ using ConsoleApp.Array.JaggedArray;
 using ConsoleApp.LeetCode.Walbreak;
 using ConsoleApp.DS;
 using ConsoleApp.LeetCode.Medium;
+using ConsoleApp.Hacker_Rank_challanges_and_extra._30_Days_Excercise;
 
 namespace ConsoleApp
 {
@@ -29,7 +30,10 @@ namespace ConsoleApp
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("*****************************");
-            
+            FactorialRecursion objfactorialRecursion = new FactorialRecursion();
+            int val =   objfactorialRecursion.factVal(5);
+
+
             Console.WriteLine("*********************Start Transpose need to move in the class*******************************");
             int[,] matrix1 = { { 2, 4, -1 }, { -10, 5, 11}, { 18, -7, 6} };
             Transpose(matrix1);

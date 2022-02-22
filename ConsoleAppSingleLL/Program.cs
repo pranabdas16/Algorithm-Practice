@@ -6,6 +6,59 @@ namespace ConsoleAppSingleLL
 {
     class Program
     {
+        public class SinglyNode1
+        {
+            public int Data;
+            public SinglyNode1 Next;
+        }
+
+        public class SinglyLinkedList1
+        {
+            SinglyNode1 Head = new SinglyNode1();
+            public SinglyLinkedList1()
+            {
+                Head = null;
+            }
+
+            public void AddToHead(int element)
+            {
+                SinglyNode1 temp = new SinglyNode1();
+                temp.Data = element;
+                temp.Next = Head;
+                Head = temp;
+            }
+
+            public void AddToTail(int element)
+            {
+                SinglyNode1 temp = new SinglyNode1();
+                temp.Data = element;
+                temp.Next = null;
+                if (Head == null)
+                {
+                    Head = temp;
+                }
+                else
+                {
+                    SinglyNode1 currentNode = new SinglyNode1();
+                    currentNode = Head;
+                    while (currentNode.Next != null)
+                        currentNode = currentNode.Next;
+
+                    currentNode.Next = temp;
+                }
+            }
+
+            public void PrintLinkedList()
+            {
+                SinglyNode1 currentNode = new SinglyNode1();
+                currentNode = Head;
+                while (currentNode != null)
+                {
+                    Console.Write($"| {currentNode.Data} | ->");
+                    currentNode = currentNode.Next;
+                }
+            }
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -48,6 +101,14 @@ namespace ConsoleAppSingleLL
             //SingleNode objSingleNode = new SingleNode();
 
             Console.WriteLine();
+            Console.WriteLine("**********************************************************************************");
+            Console.WriteLine("**********************************************************************************");
+            SinglyLinkedList1 obj = new SinglyLinkedList1();
+            obj.AddToHead(5);
+            obj.AddToHead(3);
+            obj.AddToHead(1);
+            obj.AddToTail(7);
+            obj.PrintLinkedList();
             Console.WriteLine("**********************************************************************************");
             Console.WriteLine("**********************************************************************************");
 

@@ -47,6 +47,8 @@
     <Compile Include="Array\JaggedArray\TransponseMatrix1.cs" />
     <Compile Include="commonPrefix.cs" />
     <Compile Include="DS\DictionaryOne.cs" />
+    <Compile Include="Hacker Rank challanges and extra\30 Days Excercise\FactorialRecursion.cs" />
+    <Compile Include="Hacker Rank challanges and extra\30 Days Excercise\NameAndNumber.cs" />
     <Compile Include="Hacker Rank challanges and extra\AppleAndOrange.cs" />
     <Compile Include="Hacker Rank challanges and extra\Arrays\LeftRotation.cs" />
     <Compile Include="Hacker Rank challanges and extra\BirthdayCakeCandles.cs" />
@@ -61,6 +63,7 @@
     <Compile Include="Hacker Rank challanges and extra\Impl_BillDivision.cs" />
     <Compile Include="Hacker Rank challanges and extra\Impl_ElectronicsShop.cs" />
     <Compile Include="Hacker Rank challanges and extra\Impl_SubarrayDivision.cs" />
+    <Compile Include="Hacker Rank challanges and extra\SpaceStringSwitchCase.cs" />
     <Compile Include="Hacker Rank challanges and extra\String_AlternatingCharacters.cs" />
     <Compile Include="Hacker Rank challanges and extra\String_BeautifulBinaryString.cs" />
     <Compile Include="Hacker Rank challanges and extra\String_Pangrams.cs" />
