@@ -30,8 +30,39 @@ namespace ConsoleApp
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("*****************************");
-            FactorialRecursion objfactorialRecursion = new FactorialRecursion();
-            int val =   objfactorialRecursion.factVal(5);
+
+            Console.WriteLine(repeatedString("aba", 15));
+            long repeatedString(string s, long n)
+            {
+                if (s.Length == 0)
+                    return 0;
+                if (s.Length == 1 && s[0] == 'a')
+                    return n;
+ 
+                long quot, rem;
+                quot = n / s.Length;
+                rem = n % s.Length;
+                string newStr = string.Empty;
+                long countA = 0;
+                for (int i = 0; i < s.Length; i++)
+                {
+                    if (s[i] == 'a')
+                    {
+                        countA++;
+                    }
+                }
+
+                countA *= quot;
+
+                for (int i = 0; i < rem; i++)
+                {
+                    if (s[i] == 'a')
+                    {
+                        countA++;
+                    }
+                }
+                return countA;
+            }
 
 
             Console.WriteLine("*********************Start Transpose need to move in the class*******************************");
