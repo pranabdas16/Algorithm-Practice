@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppLinkedList", "Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerRankConsoleApp", "HackerRankConsoleApp\HackerRankConsoleApp.csproj", "{0BCE1C09-4EAD-4ACC-B6A6-1C8050A49D61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppDoubbleLL", "ConsoleAppDoubbleLL\ConsoleAppDoubbleLL.csproj", "{9FCC3604-3965-4647-B2D0-6934F5896274}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppDoubbleLL", "ConsoleAppDoubbleLL\ConsoleAppDoubbleLL.csproj", "{9FCC3604-3965-4647-B2D0-6934F5896274}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppSimpleDS", "ConsoleAppSimpleDS\ConsoleAppSimpleDS.csproj", "{923D789C-7B18-4EF4-B4C7-08419E0419AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppSimpleDS", "ConsoleAppSimpleDS\ConsoleAppSimpleDS.csproj", "{923D789C-7B18-4EF4-B4C7-08419E0419AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeDS", "TreeDS\TreeDS.csproj", "{D8938ED0-E1DE-40F9-9800-B69DCD3CBBA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{923D789C-7B18-4EF4-B4C7-08419E0419AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{923D789C-7B18-4EF4-B4C7-08419E0419AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{923D789C-7B18-4EF4-B4C7-08419E0419AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8938ED0-E1DE-40F9-9800-B69DCD3CBBA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8938ED0-E1DE-40F9-9800-B69DCD3CBBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8938ED0-E1DE-40F9-9800-B69DCD3CBBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8938ED0-E1DE-40F9-9800-B69DCD3CBBA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

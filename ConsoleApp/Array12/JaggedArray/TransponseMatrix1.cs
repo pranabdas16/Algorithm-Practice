@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp.Array.JaggedArray
+namespace ConsoleApp.Array12.JaggedArray
 {
     /// <summary> doesn't work fully No...........................
     /// https://leetcode.com/problems/transpose-matrix/

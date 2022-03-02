@@ -6,58 +6,65 @@ namespace ConsoleAppSingleLL
 {
     class Program
     {
-        public class SinglyNode1
+        public class SingleNode
         {
             public int Data;
-            public SinglyNode1 Next;
+            public SingleNode Next;
+
         }
 
-        public class SinglyLinkedList1
+        public class SingleList
         {
-            SinglyNode1 Head = new SinglyNode1();
-            public SinglyLinkedList1()
-            {
-                Head = null;
-            }
+            public SingleNode Head;
 
-            public void AddToHead(int element)
+            public void AddToTop(int element)
             {
-                SinglyNode1 temp = new SinglyNode1();
-                temp.Data = element;
-                temp.Next = Head;
-                Head = temp;
+                SingleNode objNewNode = new SingleNode();
+                objNewNode.Data = element;
+                objNewNode.Next = Head;
+                Head = objNewNode;
             }
 
             public void AddToTail(int element)
             {
-                SinglyNode1 temp = new SinglyNode1();
-                temp.Data = element;
-                temp.Next = null;
+                SingleNode objNewNode = new SingleNode();
+                objNewNode.Data = element;
+                objNewNode.Next = null;
+
                 if (Head == null)
                 {
-                    Head = temp;
+                    Head = objNewNode;
                 }
                 else
                 {
-                    SinglyNode1 currentNode = new SinglyNode1();
-                    currentNode = Head;
-                    while (currentNode.Next != null)
-                        currentNode = currentNode.Next;
-
-                    currentNode.Next = temp;
+                    SingleNode tempNode = new SingleNode();
+                    tempNode = Head;
+                    while (tempNode.Next != null)
+                    {
+                        tempNode = tempNode.Next;
+                    }
+                    tempNode.Next = objNewNode;
                 }
             }
 
-            public void PrintLinkedList()
+            public void PrintSingleList()
             {
-                SinglyNode1 currentNode = new SinglyNode1();
-                currentNode = Head;
-                while (currentNode != null)
+                SingleNode tempNode = new SingleNode();
+                tempNode = Head;
+                if (Head == null)
                 {
-                    Console.Write($"| {currentNode.Data} | ->");
-                    currentNode = currentNode.Next;
+                    Console.Write("List is empty");
+                }
+                else
+                {
+                    while (tempNode != null)
+                    {
+                        Console.Write($"{tempNode.Data} |->");
+                        tempNode = tempNode.Next;
+                    }
                 }
             }
+
         }
         static void Main(string[] args)
         {
@@ -103,12 +110,12 @@ namespace ConsoleAppSingleLL
             Console.WriteLine();
             Console.WriteLine("**********************************************************************************");
             Console.WriteLine("**********************************************************************************");
-            SinglyLinkedList1 obj = new SinglyLinkedList1();
-            obj.AddToHead(5);
-            obj.AddToHead(3);
-            obj.AddToHead(1);
+            SingleList obj = new SingleList();
+            obj.AddToTop(5);
+            obj.AddToTop(3);
+            obj.AddToTop(1);
             obj.AddToTail(7);
-            obj.PrintLinkedList();
+            obj.PrintSingleList();
             Console.WriteLine("**********************************************************************************");
             Console.WriteLine("**********************************************************************************");
 

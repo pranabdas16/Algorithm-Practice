@@ -12,6 +12,7 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
+
 namespace HackerRankConsoleApp
 {
     class Program
@@ -21,34 +22,37 @@ namespace HackerRankConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            //Remove this below code in the region...
+
+            
+
+            //Remove this below code in the region... make sure already made class for this as backup
             #region 
-            Dictionary<string, int> nameNumber = new Dictionary<string, int>();
-            List<string> searchStr = new List<string>();
-            int n;
-            n = Convert.ToInt32(Console.ReadLine());
-            string key, value;
-            for (int i = 0; i < n; i++)
-            {
-                string phrase = Console.ReadLine().ToString();
-                string[] word = phrase.Split(' ');
-                nameNumber.Add(word[0], Convert.ToInt32(word[1]));
-            }
-            for (int i = 0; i < n; i++)
-            {
-                searchStr.Add(Console.ReadLine().ToString());
-            }
-            for (int i = 0; i < n; i++)
-            {
-                if (nameNumber.Keys.Contains(searchStr[i]))
-                {
-                    Console.WriteLine($"{nameNumber.ElementAt(i).Key} = {nameNumber.ElementAt(i).Value}");
-                }
-                else
-                {
-                    Console.WriteLine("Not found");
-                }
-            }
+            //Dictionary<string, int> nameNumber = new Dictionary<string, int>();
+            //List<string> searchStr = new List<string>();
+            //int n;
+            //n = Convert.ToInt32(Console.ReadLine());
+            //string key, value;
+            //for (int i = 0; i < n; i++)
+            //{
+            //    string phrase = Console.ReadLine().ToString();
+            //    string[] word = phrase.Split(' ');
+            //    nameNumber.Add(word[0], Convert.ToInt32(word[1]));
+            //}
+            //for (int i = 0; i < n; i++)
+            //{
+            //    searchStr.Add(Console.ReadLine().ToString());
+            //}
+            //for (int i = 0; i < n; i++)
+            //{
+            //    if (nameNumber.Keys.Contains(searchStr[i]))
+            //    {
+            //        Console.WriteLine($"{nameNumber.ElementAt(i).Key} = {nameNumber.ElementAt(i).Value}");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Not found");
+            //    }
+            //}
 
             #endregion
 

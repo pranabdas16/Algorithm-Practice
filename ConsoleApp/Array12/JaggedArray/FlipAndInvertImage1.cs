@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp.Array.JaggedArray
+namespace ConsoleApp.Array12.JaggedArray
 {
     class FlipAndInvertImage1
     {

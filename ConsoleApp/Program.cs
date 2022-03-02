@@ -11,11 +11,15 @@ using ConsoleApp.LeetCode.Easy;
 using ConsoleApp.Sanfoundry;
 using ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays;
 using ConsoleApp.Search;
-using ConsoleApp.Array.JaggedArray;
+using ConsoleApp.Array12.JaggedArray;
 using ConsoleApp.LeetCode.Walbreak;
 using ConsoleApp.DS;
 using ConsoleApp.LeetCode.Medium;
 using ConsoleApp.Hacker_Rank_challanges_and_extra._30_Days_Excercise;
+using ConsoleApp.Search;
+using ConsoleApp.Hacker_Rank_challanges_and_extra.Few_Test_To_Pass;
+using ConsoleApp.Hacker_Rank_challanges_and_extra.Warmup;
+
 
 namespace ConsoleApp
 {
@@ -23,13 +27,23 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("*****************************");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("*****************************");
+            MinimumSwaps2V2 objsockMerchant = new MinimumSwaps2V2();
+            objsockMerchant.minimumSwaps2Version3();
+            Console.WriteLine();
 
-           
-            
             Console.WriteLine("*****************************");
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("*****************************");
+
+            //StringSearch objStrSearch = new StringSearch();
+
+            StringSearch1 objStrSearch1 = new StringSearch1();
+            objStrSearch1.stringSearch1();
 
             Console.WriteLine(repeatedString("aba", 15));
             long repeatedString(string s, long n)
