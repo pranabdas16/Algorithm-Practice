@@ -8,7 +8,7 @@ using ConsoleApp.Hacker_Rank_challanges_and_extra;
 using ConsoleApp.Sorting;
 using ConsoleApp.LinkedLIst;
 using ConsoleApp.LeetCode.Easy;
-using ConsoleApp.Sanfoundry;
+using ConsoleApp.Matrix2DArray;
 using ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays;
 using ConsoleApp.Search;
 using ConsoleApp.Array12.JaggedArray;
@@ -31,8 +31,25 @@ namespace ConsoleApp
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("*****************************");
-            MinimumSwaps2V2 objsockMerchant = new MinimumSwaps2V2();
-            objsockMerchant.minimumSwaps2Version3();
+            // Bubble sort......
+            int[] arr = { 5, 1, 3, 2, 7, 4, 5, 6 };
+
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                for (int j = i; j < arr.Length - i - 1; j++)
+                {
+                    if (arr[j] > arr[j + 1])
+                    {
+                        int temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            foreach (var c in arr)
+            {
+                Console.Write($"{c}, ");
+            }
             Console.WriteLine();
 
             Console.WriteLine("*****************************");

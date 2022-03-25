@@ -19,7 +19,7 @@ namespace ConsoleApp.Array12.JaggedArray
                 
                 new [] { 2, 4, -1},
                 new [] { -10, 5, 11},
-                new [] { 18, -7, 6}
+                new [] { 18, -7, 7}
             };
             int[][] ansMatrix = new int[matrix.Length][];
             for (int i = 0; i < matrix.Length; i++)

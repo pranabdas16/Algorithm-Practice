@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp.Sanfoundry
+namespace ConsoleApp.Matrix2DArray
 {
     /// <summary>
     /// Matrix Addition
