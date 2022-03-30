@@ -1,31 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ConsoleApp.LeetCode.Medium;
+using ConsoleApp.Search;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConsoleApp.Simple_problem;
-using ConsoleApp.Hacker_Rank_challanges_and_extra;
-using ConsoleApp.Sorting;
-using ConsoleApp.LinkedLIst;
-using ConsoleApp.LeetCode.Easy;
-using ConsoleApp.Matrix2DArray;
-using ConsoleApp.Hacker_Rank_challanges_and_extra.Arrays;
-using ConsoleApp.Search;
-using ConsoleApp.Array12.JaggedArray;
-using ConsoleApp.LeetCode.Walbreak;
-using ConsoleApp.DS;
-using ConsoleApp.LeetCode.Medium;
-using ConsoleApp.Hacker_Rank_challanges_and_extra._30_Days_Excercise;
-using ConsoleApp.Search;
-using ConsoleApp.Hacker_Rank_challanges_and_extra.Few_Test_To_Pass;
-using ConsoleApp.Hacker_Rank_challanges_and_extra.Warmup;
-
 
 namespace ConsoleApp
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.WriteLine("*****************************");
             Console.WriteLine();
@@ -69,7 +51,7 @@ namespace ConsoleApp
                     return 0;
                 if (s.Length == 1 && s[0] == 'a')
                     return n;
- 
+
                 long quot, rem;
                 quot = n / s.Length;
                 rem = n % s.Length;
@@ -95,14 +77,12 @@ namespace ConsoleApp
                 return countA;
             }
 
-
             Console.WriteLine("*********************Start Transpose need to move in the class*******************************");
-            int[,] matrix1 = { { 2, 4, -1 }, { -10, 5, 11}, { 18, -7, 6} };
+            int[,] matrix1 = { { 2, 4, -1 }, { -10, 5, 11 }, { 18, -7, 6 } };
             Transpose(matrix1);
 
             void Transpose(int[,] matrix)
             {
-
                 int[,] matrixArray = matrix;
                 //int[,] ansMatrix = new //new int[3,3];
                 int row = matrixArray.GetLength(0);
@@ -117,7 +97,6 @@ namespace ConsoleApp
                 int y = 0;
                 for (int j = 0; j < col; j++)
                 {
-
                     for (int i = 0; i < row; i++)
                     {
                         ansMatrix[y, x1] = matrixArray[j, i];
@@ -134,18 +113,15 @@ namespace ConsoleApp
                 {
                     for (int i = 0; i < row; i++)
                     {
-                        Console.Write(ansMatrix[i,j] + ",");
+                        Console.Write(ansMatrix[i, j] + ",");
                     }
                     Console.WriteLine();
                 }
-                
             }
 
             Console.WriteLine("*********************End Transpose need to move in the class*******************************");
 
             string[] objString = new string[] { "01111", "01101", "00011", "11110" };
-            
-            
 
             char[][] result = objString.Select(item => item.ToArray()).ToArray();
 
@@ -156,52 +132,51 @@ namespace ConsoleApp
 
             int[,] solArray = new int[row2, col2];
 
-            for (int i = 0; i < row2; i++ )
+            for (int i = 0; i < row2; i++)
             {
                 for (int j = 0; j < result[i].Length; j++)
                 {
                     solArray[i, j] = Convert.ToInt32(result[i][j]);
-                   
                 }
             }
 
-            
-
             CountGoodNumbers objGoodNumbers = new CountGoodNumbers();
             objGoodNumbers.countGoodNumbers(50);
-                       
+
             int removeThis = 0;
 
             Console.ReadLine();
         }
 
-        public class LinkedListt 
+        public class LinkedListt
         {
-            Node head;
-            public class Node {
+            private Node head;
+
+            public class Node
+            {
                 public int data;
                 public Node next;
+
                 public Node(int d)
                 {
                     data = d;
                     next = null;
                 }
-            
             }
         }
-        
-        static void removeDuplicate(char[] CharArry, int b)
+
+        private static void removeDuplicate(char[] CharArry, int b)
         {
             string str = new string(CharArry);
-           // List<string> listStr = new List<string>(str);
+            // List<string> listStr = new List<string>(str);
             //int index = 0;
-            int i=0, j;
+            int i = 0, j;
 
             while (i < b)
             {
                 j = i;
 
-                char  c =  str[i];
+                char c = str[i];
 
                 for (j = 1; j < b; j++)
                 {
@@ -209,15 +184,11 @@ namespace ConsoleApp
                     {
                         //str.Remove(i, i);
                     }
-                    
                 }
 
                 i++;
                 // Console.Write(c);
-                
-
             }
-            
         }
     }
 }

@@ -81,5 +81,46 @@ namespace ConsoleAppSingleLL
             }
         }
 
+        //Inserts a new element at the given position
+        public void push_at(int newElement, int position)
+        {
+            Node5 newNode = new Node5();
+            newNode.data = newElement;
+            newNode.next = null;
+
+            if (position < 1)
+            {
+                Console.Write("\nposition should be >= 1.");
+            }
+            else if (position == 1)
+            {
+                newNode.next = head;
+                head = newNode;
+            }
+            else
+            {
+
+                Node5 temp = new Node5();
+                temp = head;
+                for (int i = 1; i < position - 1; i++)
+                {
+                    if (temp != null)
+                    {
+                        temp = temp.next;
+                    }
+                }
+
+                if (temp != null)
+                {
+                    newNode.next = temp.next;
+                    temp.next = newNode;
+                }
+                else
+                {
+                    Console.Write("\nThe previous node is null.");
+                }
+            }
+        }
+
     }
 }

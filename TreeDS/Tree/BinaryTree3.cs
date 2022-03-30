@@ -7,7 +7,12 @@ using TreeDS.Node;
 
 namespace TreeDS.Tree
 {
-   public class BinaryTree3
+    /// <summary>
+    /// Reference...
+    /// https://www.codeguru.co.in/2015/03/how-to-create-binary-tree-in-c.html
+    /// http://csharpexamples.com/c-binary-search-tree-implementation/
+    /// </summary>
+    public class BinaryTree3
     {
         public Node3 root;
         public BinaryTree3()
