@@ -9,6 +9,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
+using HackerRankConsoleApp.LeetCode;
 using System.Text;
 using System;
 
@@ -22,9 +23,22 @@ namespace HackerRankConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            string str = "leetcode";
+            FirstUniqChar objFUC = new FirstUniqChar();
+            objFUC.firstUniqchar(str);
             
-            // climbingLeaderboard();
+            
+            int[][] mat1 = { new int []{ 1,2}, new int[] {3,4 } };
+            MatrixReshape objMR = new MatrixReshape();
+            objMR.matrixReshape(mat1, 2, 2);
+
+            int[] arr = { 2, 3, 1, 2, 4, 3 };
+            int t = 7;
+            MinSubArrayLength objminSubArrayLength = new MinSubArrayLength();
+            int target =   objminSubArrayLength.MinSubArrayLen(t, arr);
+
         }
+
 
         /// <summary>
         /// https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem
@@ -198,6 +212,7 @@ namespace HackerRankConsoleApp
 
         //}
         #endregion
+
         #region -- climbing Leader Board 2 ... This method isn't working...
         //public static List<int> climbingLeaderboard2()//List<int> ranked, List<int> player)
         //{
@@ -257,6 +272,7 @@ namespace HackerRankConsoleApp
 
         //}
         #endregion
+
         #region -- climbing Leader Board ... This method isn't working...
         //public static List<int> climbingLeaderboard1()//List<int> ranked, List<int> player)
         //{
