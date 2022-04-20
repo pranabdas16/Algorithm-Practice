@@ -23,19 +23,22 @@ namespace HackerRankConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            string str = "leetcode";
-            FirstUniqChar objFUC = new FirstUniqChar();
-            objFUC.firstUniqchar(str);
-            
-            
-            int[][] mat1 = { new int []{ 1,2}, new int[] {3,4 } };
-            MatrixReshape objMR = new MatrixReshape();
-            objMR.matrixReshape(mat1, 2, 2);
+            //string str = "leetcode";
+            //FirstUniqChar objFUC = new FirstUniqChar();
+            //objFUC.firstUniqchar(str);
 
-            int[] arr = { 2, 3, 1, 2, 4, 3 };
-            int t = 7;
-            MinSubArrayLength objminSubArrayLength = new MinSubArrayLength();
-            int target =   objminSubArrayLength.MinSubArrayLen(t, arr);
+
+            //int[][] mat1 = { new int []{ 1,2}, new int[] {3,4 } };
+            //MatrixReshape objMR = new MatrixReshape();
+            //objMR.matrixReshape(mat1, 2, 2);
+
+            //string haystack = "aaaaaa", needle = "bba";
+            //StrString objStrString = new StrString();
+            //objStrString.StrStr1(haystack, needle);
+
+            RepSubstringPattern objRSP = new RepSubstringPattern();
+            objRSP.RepeatedSubstringPattern("abcabc");
+
 
         }
 

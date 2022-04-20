@@ -10,6 +10,7 @@ namespace HackerRankConsoleApp.LeetCode
     {
         /// <summary>
         /// https://leetcode.com/problems/minimum-size-subarray-sum/
+        /// https://leetcode.com/problems/reshape-the-matrix/
         /// </summary>
         /// <param name="mat"></param>
         /// <param name="r"></param>
@@ -27,7 +28,7 @@ namespace HackerRankConsoleApp.LeetCode
             {
                 targetMat[i] = new int[c];
             }
-            if (row == r && col == c)
+            if (row* r == col * c) // if (row *col != r*c) // This works for all the test to pass...
             {
                 return mat;
             }
@@ -61,5 +62,41 @@ namespace HackerRankConsoleApp.LeetCode
             return targetMat;
 
         }
+
+        public int[][] matrixReshape11(int[][] mat, int r, int c)
+        {
+            int[][] narr = new int[r][];
+            for (int i = 0; i < r; i++)
+            {
+                narr[i] = new int[c];
+            }
+
+            if (mat.Length * mat[0].Length != r * c)
+            {
+                return mat;
+            }
+            else
+            {
+                int row = 0;
+                int col = 0;
+                for (int i = 0; i < mat.Length; i++)
+                {
+                    for (int j = 0; j < mat[i].Length; j++)
+                    {
+                        narr[row][col] = mat[i][j];
+                        col++;
+                        if (col == c)
+                        {
+                            col = 0;
+                            row++;
+                        }
+                    }
+                }
+            }
+            return narr;
+
+        }
+
+
     }
 }
