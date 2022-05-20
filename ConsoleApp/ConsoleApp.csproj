@@ -90,6 +90,7 @@
     <Compile Include="IntegerToRoman.cs" />
     <Compile Include="LeetCode\Easy\DetectCapitol.cs" />
     <Compile Include="LeetCode\Easy\FizzBuzz.cs" />
+    <Compile Include="LeetCode\Easy\FrequencySortNum.cs" />
     <Compile Include="LeetCode\Easy\PlusOneOnline.cs" />
     <Compile Include="LeetCode\Easy\ReverseInteger1.cs" />
     <Compile Include="LeetCode\Easy\ReverseString.cs" />
@@ -99,6 +100,12 @@
     <Compile Include="LeetCode\Medium\countGoodNumbers1.cs" />
     <Compile Include="LeetCode\Medium\CountPairs.cs" />
     <Compile Include="LeetCode\Hard\ValidNumber.cs" />
+    <Compile Include="LeetCode\Medium\FrequencySort.cs" />
+    <Compile Include="LeetCode\Medium\LengthOfLongestSubstring.cs" />
+    <Compile Include="LeetCode\Medium\LengthOfLongestSubstring1.cs" />
+    <Compile Include="LeetCode\Medium\TopFrequentWord2.cs" />
+    <Compile Include="LeetCode\Medium\TopKFrequent.cs" />
+    <Compile Include="LeetCode\Medium\TopKFrequentWord.cs" />
     <Compile Include="LeetCode\Walbreak\PlusOne.cs" />
     <Compile Include="LeetCode\Walbreak\SearchingChallenge.cs" />
     <Compile Include="LeetCode\Walbreak\SortArrayByParity.cs" />

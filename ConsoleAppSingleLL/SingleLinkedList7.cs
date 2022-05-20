@@ -31,31 +31,14 @@ namespace ConsoleAppSingleLL
 
 			public void AddToHead2(Node7 tmpList)
 			{
-
 				while (tmpList != null)
 				{
-					//try
-					//{
-					//    while (secondTempList.Next != null)
-					//    {
-					//        secondTempList = secondTempList.Next;
-					//    }
-					//}
-					//catch (Exception)
-					//{
-					//    //throw;
-					//}
-					//while (secondTempList.Next != null)
-					//{
-					//	secondTempList = secondTempList.Next;
-					//}
 					int val = tmpList.Data;
 					Node7 secondTempList = new Node7();
 					secondTempList.Data = val;
 					secondTempList.Next = Head2;
 					Head2 = secondTempList;
-
-					//secondTempList = secondTempList.Next;
+				
 					tmpList = tmpList.Next;
 				}
 			}

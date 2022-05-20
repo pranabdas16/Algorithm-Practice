@@ -1,22 +1,163 @@
 ﻿using System;
+using System.Collections;
 using ConsoleAppSingleLL;
 using ConsoleAppSingleLL1;
+
 
 namespace ConsoleAppSingleLL
 {
     class Program
     {
-        
-		
+        public class ValidParenthesis
+        {
+            public void validParenthesis(string s)
+            {
+                bool result = false;
+                Stack stackArray = new Stack();
+
+                for (int i = 0; i < s.Length; i++)
+                {
+                    switch (s[i])
+                    {
+                        case '(':
+                            stackArray.Push('(');
+                            break;
+                        case ')':
+                            if (Convert.ToChar(stackArray.Peek()) == '(')
+                            {
+                                stackArray.Pop();
+                            }
+                            else
+                            {
+                                stackArray.Push(')');
+                            }
+                            break;
+                        case '{':
+                            stackArray.Push('{');
+                            break;
+                        case '}':
+                            if (Convert.ToChar(stackArray.Peek()) == '{')
+                            {
+                                stackArray.Pop();
+                            }
+                            else
+                            {
+                                stackArray.Push('}');
+                            }
+                            break;
+                        case '[':
+                            stackArray.Push('[');
+                            break;
+                        case ']':
+                            if (Convert.ToChar(stackArray.Peek()) == '[')
+                            {
+                                stackArray.Pop();
+                            }
+                            else
+                            {
+                                stackArray.Push(']');
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+        public class Node8<T> 
+        {
+            public T Data;
+            public Node8<T> Next;        
+        }
+
+        public class SingleLinkedList8<T> 
+        {
+            public Node8<T> Head;
+            public int count = 0;
+
+            public void AddHeadToList(T element)
+            {
+                Node8<T> newNode = new Node8<T>();
+                newNode.Data = element;
+                newNode.Next = Head;
+
+                Head = newNode;
+                count++;
+            }
+
+            public void AddToTail(T element)
+            {
+                Node8<T> newNode = new Node8<T>();
+                newNode.Data = element;
+                newNode.Next = null;
+                if (Head == null)
+                    AddHeadToList(element);
+                else
+                {
+                    Node8<T> tempNode = new Node8<T>();
+                    tempNode = Head;
+                    while (tempNode.Next != null)
+                    {
+                        tempNode = tempNode.Next;
+                    }
+                    tempNode.Next = newNode;
+                    count++;
+                }
+            }
+
+            public void ReverseList()
+            {
+                if (Head != null)
+                {
+                    Node8<T> preNode, currNode, nextNode = new Node8<T>();
+                    preNode = null;
+                    nextNode = null;
+                    currNode = this.Head;
+
+                    while (currNode != null)
+                    {
+                        nextNode = currNode.Next;
+                        currNode.Next = preNode;
+
+                        preNode = currNode;
+                        currNode = nextNode;
+                    }
+
+                    Head = preNode;
+                }
+            }
+
+            public void PrintList()
+            {
+                Node8<T> tempNode = new Node8<T>();
+                tempNode = Head;
+                while (tempNode != null)
+                {
+                    Console.Write($"|{tempNode.Data}|->");
+                    tempNode = tempNode.Next;
+                }
+            }
+        }
 
         
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
 			Console.WriteLine("**************************Linked List 1*******************************");
+            SingleLinkedList8<string> SSL8 = new SingleLinkedList8<string>();
+            SSL8.AddHeadToList("Test");
+            SSL8.AddHeadToList("List");
+            SSL8.AddHeadToList("Linked");
+            SSL8.AddHeadToList("hello");
+            SSL8.PrintList();
+            Console.WriteLine();
+            SSL8.ReverseList();
+            SSL8.PrintList();
+            Console.WriteLine();
 
 
-			Console.WriteLine("**************************Linked List 7*******************************");
+
+            Console.WriteLine("**************************Linked List 7*******************************");
 			SingleLinkedList7 objSSLL1 = new SingleLinkedList7();
 			objSSLL1.AddToHead(10);
 			objSSLL1.AddToHead(7);
@@ -42,22 +183,15 @@ namespace ConsoleAppSingleLL
 
 
             Console.WriteLine("**************************Linked List 6*******************************");
-            SingleLinkedList6 objSSL6 = new SingleLinkedList6();
-            objSSL6.AddToHead(5);
-            objSSL6.AddToHead(4);
-            objSSL6.AddToHead(3);
-            objSSL6.AddToHead(1);
-            objSSL6.AddToTail(7);
-            objSSL6.PrintList();
-            Console.WriteLine();
-            objSSL6.push_at(2, 4);
-            objSSL6.PrintList();
-            objSSL6.pop_at(6);
-            Console.WriteLine();
-            objSSL6.PrintList();
-            Console.WriteLine("This reverse of list:");
-            objSSL6.ReverseList();
-            Console.ReadLine();
+            SingleLinkedList1 SSL1 = new SingleLinkedList1();
+            SSL1.AddLast(12);
+            SSL1.AddLast(10);
+            SSL1.AddLast(8);
+            Console.WriteLine("Here is the list:");
+            SSL1.Print();
+            SSL1.ReverseList();
+            Console.WriteLine("Here is the Reverse List:");
+            SSL1.Print();
             
         }
     }

@@ -49,6 +49,27 @@ namespace ConsoleAppSingleLL1
             }
         }
 
+        public void ReverseList()
+        {
+            if (head != null)
+            {
+                Node1 prevNode, currntNode, nextNode = new Node1();
+                prevNode = null;
+                currntNode = head;
+                nextNode = null;
+
+                while (currntNode != null)
+                {
+                    nextNode = currntNode.next;
+                    currntNode.next = prevNode;
+
+                    prevNode = currntNode;
+                    currntNode = nextNode;
+                }
+                head = prevNode;
+            }
+        }
+
         public void Print()
         {
             Node1 temp1 = new Node1();

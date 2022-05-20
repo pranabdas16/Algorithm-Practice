@@ -2,6 +2,10 @@
 using ConsoleApp.Search;
 using System;
 using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+using ConsoleApp.LeetCode.Easy;
 
 namespace ConsoleApp
 {
@@ -13,26 +17,11 @@ namespace ConsoleApp
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("*****************************");
-            // Bubble sort......
-            int[] arr = { 5, 1, 3, 2, 7, 4, 5, 6 };
+            LengthOfLongestSubstring1 objTKFW = new LengthOfLongestSubstring1();
+            string words = "dvdf";//"aab";//"pwwkew";////"pwwkew";"aab";//"dvdf";"abcabcbb";
 
-            for (int i = 0; i < arr.Length - 1; i++)
-            {
-                for (int j = i; j < arr.Length - i - 1; j++)
-                {
-                    if (arr[j] > arr[j + 1])
-                    {
-                        int temp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = temp;
-                    }
-                }
-            }
-            foreach (var c in arr)
-            {
-                Console.Write($"{c}, ");
-            }
-            Console.WriteLine();
+
+            objTKFW.LengthOfLongestSubstring(words);
 
             Console.WriteLine("*****************************");
             Console.WriteLine();
