@@ -15,13 +15,17 @@ namespace ConsoleApp
         {
             Console.WriteLine("*****************************");
             Console.WriteLine();
+            Console.Write("My code run here");
             Console.WriteLine();
             Console.WriteLine("*****************************");
-            LengthOfLongestSubstring1 objTKFW = new LengthOfLongestSubstring1();
-            string words = "dvdf";//"aab";//"pwwkew";////"pwwkew";"aab";//"dvdf";"abcabcbb";
+            IsPalindrome objPal = new IsPalindrome();
+            objPal.isPalindrome();
+            //int[] nums = { -1, 1, -1, 1, -1 };
+            //ArraySign objAS = new ArraySign();
+            //objAS.arraySign(nums);
 
 
-            objTKFW.LengthOfLongestSubstring(words);
+
 
             Console.WriteLine("*****************************");
             Console.WriteLine();
@@ -30,6 +34,21 @@ namespace ConsoleApp
 
             //StringSearch objStrSearch = new StringSearch();
 
+            Console.WriteLine("*********************Start code here*******************************");
+            //Code here to check
+            List<string>
+            CommonChars objCC = new CommonChars();
+            objCC.CommonChar()
+
+
+
+
+            
+            
+            
+            
+            Console.WriteLine("*********************End code here*******************************");
+            
             StringSearch1 objStrSearch1 = new StringSearch1();
             objStrSearch1.stringSearch1();
 

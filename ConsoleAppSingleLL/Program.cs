@@ -4,6 +4,7 @@ using ConsoleAppSingleLL;
 using ConsoleAppSingleLL1;
 
 
+
 namespace ConsoleAppSingleLL
 {
     class Program
@@ -144,19 +145,16 @@ namespace ConsoleAppSingleLL
         {
             Console.WriteLine("Hello World!");
 			Console.WriteLine("**************************Linked List 1*******************************");
-            SingleLinkedList8<string> SSL8 = new SingleLinkedList8<string>();
-            SSL8.AddHeadToList("Test");
-            SSL8.AddHeadToList("List");
-            SSL8.AddHeadToList("Linked");
-            SSL8.AddHeadToList("hello");
-            SSL8.PrintList();
-            Console.WriteLine();
-            SSL8.ReverseList();
-            SSL8.PrintList();
-            Console.WriteLine();
-
-
-
+            SingleLinkedList9 objSSL9 = new SingleLinkedList9();
+            objSSL9.AddToHead(8);
+            objSSL9.AddToHead(7);
+            objSSL9.AddToHead(5);
+            objSSL9.PrintList();
+            objSSL9.AddToTail(10);
+            objSSL9.AddToTail(11);
+            objSSL9.PrintList();
+            objSSL9.AddElementtoIndex(2, 100);
+            objSSL9.PrintList();
             Console.WriteLine("**************************Linked List 7*******************************");
 			SingleLinkedList7 objSSLL1 = new SingleLinkedList7();
 			objSSLL1.AddToHead(10);
