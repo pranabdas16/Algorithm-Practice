@@ -36,17 +36,19 @@ namespace ConsoleApp
 
             Console.WriteLine("*********************Start code here*******************************");
             //Code here to check
-            List<string>
-            CommonChars objCC = new CommonChars();
-            objCC.CommonChar()
+            int[] num1 = { 1, 2, 3 };
+            int[] num2 = { 2, 4, 6 };
+            FindDifference obj = new FindDifference();
+            obj.findDifference(num1, num2);
 
 
 
 
-            
-            
-            
-            
+
+
+
+
+
             Console.WriteLine("*********************End code here*******************************");
             
             StringSearch1 objStrSearch1 = new StringSearch1();

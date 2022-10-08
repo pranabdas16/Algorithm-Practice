@@ -27,7 +27,6 @@ namespace ConsoleApp.LeetCode.Easy
                         if (c == firstStr[k])
                         {
                             count++;
-                            str.RemoveAt(k);
                             break;
                         }
                     }
@@ -35,6 +34,7 @@ namespace ConsoleApp.LeetCode.Easy
                     {
                         resultStr.Add(firstStr[k].ToString());
                         n++;
+                        str.RemoveAt(k);
                     }
                 }
                 k++;

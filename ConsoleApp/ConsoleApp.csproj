@@ -92,6 +92,7 @@
     <Compile Include="LeetCode\Easy\CanConstruct.cs" />
     <Compile Include="LeetCode\Easy\CommonChars.cs" />
     <Compile Include="LeetCode\Easy\DetectCapitol.cs" />
+    <Compile Include="LeetCode\Easy\FindDifference.cs" />
     <Compile Include="LeetCode\Easy\FizzBuzz.cs" />
     <Compile Include="LeetCode\Easy\FrequencySortNum.cs" />
     <Compile Include="LeetCode\Easy\IntersectTwoArray.cs" />
