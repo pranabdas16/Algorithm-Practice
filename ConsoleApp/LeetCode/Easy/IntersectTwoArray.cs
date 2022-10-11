@@ -11,7 +11,6 @@ namespace ConsoleApp.LeetCode.Easy
     /// </summary>
     public class IntersectTwoArray
     {
-
         public int[] Intersect(int[] nums1, int[] nums2) 
         {
             List<int> smallArr, LongArr, newList = new List<int>();

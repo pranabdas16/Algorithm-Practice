@@ -36,10 +36,9 @@ namespace ConsoleApp
 
             Console.WriteLine("*********************Start code here*******************************");
             //Code here to check
-            int[] num1 = { 1, 2, 3 };
-            int[] num2 = { 2, 4, 6 };
-            FindDifference obj = new FindDifference();
-            obj.findDifference(num1, num2);
+            int x = 123;
+            Reverse obj = new Reverse();
+            obj.reverse(x);
 
 
 

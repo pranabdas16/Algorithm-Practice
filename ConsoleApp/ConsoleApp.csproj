@@ -95,6 +95,7 @@
     <Compile Include="LeetCode\Easy\FindDifference.cs" />
     <Compile Include="LeetCode\Easy\FizzBuzz.cs" />
     <Compile Include="LeetCode\Easy\FrequencySortNum.cs" />
+    <Compile Include="LeetCode\Easy\Intersection.cs" />
     <Compile Include="LeetCode\Easy\IntersectTwoArray.cs" />
     <Compile Include="LeetCode\Easy\IsPalindrome.cs" />
     <Compile Include="LeetCode\Easy\PlusOneOnline.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="LeetCode\Medium\LongestPalindrome.cs" />
     <Compile Include="LeetCode\Medium\MathPower.cs" />
     <Compile Include="LeetCode\Medium\PowerXN.cs" />
+    <Compile Include="LeetCode\Medium\Reverse.cs" />
     <Compile Include="LeetCode\Medium\TopFrequentWord2.cs" />
     <Compile Include="LeetCode\Medium\TopKFrequent.cs" />
     <Compile Include="LeetCode\Medium\TopKFrequentWord.cs" />
