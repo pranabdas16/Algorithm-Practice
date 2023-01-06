@@ -5,18 +5,82 @@ namespace TreeDS
 {
     class Program
     {
+        public class Node
+        {
+            public int Data;
+            public Node LeftNode;
+            public Node RightNode;
+
+            public Node()
+            { 
+            }
+
+            public Node(int element)
+            {
+                Data = element;
+            }
+        }
+
+        public class BinaryTree
+        {
+            public Node Root;
+            public BinaryTree()
+            {
+                Root = null;
+            }
+
+            public void AddNode(int elelment)
+            {
+                if (Root == null)
+                {
+                    Root = new Node(elelment);
+                }
+                else
+                {
+                    AddNodeRec(Root, new Node(elelment)); 
+                }
+            }
+
+            public void AddNodeRec(Node Root, Node val)
+            {
+                if (Root.Data > val.Data)
+                {
+                    if (Root.LeftNode == null)
+                    {
+                        Root.LeftNode = val;
+                        return;
+                    }
+                    else
+                        AddNodeRec(Root.LeftNode, val);
+                }
+                else
+                {
+                    if (Root.RightNode == null)
+                    {
+                        Root.RightNode = val;
+                        return;
+                    }
+                    else
+                        AddNodeRec(Root.RightNode, val);
+                }
+            }
+
+            public void TraversePreOrder(Node parent)
+            {
+                if (parent != null)
+                {
+                    Console.WriteLine(parent.Data + " ");
+                    TraversePreOrder(parent.LeftNode);
+                    TraversePreOrder(parent.RightNode);
+                }
+            }
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("***************Binary Tree5*******************");
-            BinarySearchTree1 BST = new BinarySearchTree1();
-            BST.AddNode(12);
-            BST.AddNode(3);
-            BST.AddNode(17);
-            BST.AddNode(15);
-            BST.AddNode(18);
-            BST.AddNode(10);
-            BST.AddNode(2);
+        
 
+            Console.WriteLine("***************Binary Tree*******************");
+            
 
 
             Console.WriteLine("***************String*******************");
@@ -50,14 +114,14 @@ namespace TreeDS
             //bT5.TraverseInOrder(bT5.Root);
             //bT5.TraversePostOrder(bT5.Root);
 
-            BinaryTree2 objBinaryTree = new BinaryTree2();
-            objBinaryTree.Add(1);
-            objBinaryTree.Add(2);
-            objBinaryTree.Add(7);
-            objBinaryTree.Add(3);
-            objBinaryTree.Add(10);
-            objBinaryTree.Add(5);
-            objBinaryTree.Add(8);
+            BinaryTree objBinaryTree = new BinaryTree();
+            objBinaryTree.AddNode(1);
+            objBinaryTree.AddNode(2);
+            objBinaryTree.AddNode(7);
+            objBinaryTree.AddNode(3);
+            objBinaryTree.AddNode(10);
+            objBinaryTree.AddNode(5);
+            objBinaryTree.AddNode(8);
 
             Console.WriteLine("PreOrder Traversal:");
             objBinaryTree.TraversePreOrder(objBinaryTree.Root);

@@ -6,37 +6,62 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.LeetCode.Medium
 {
-   public class LongestPalindrome
+    /// <summary>
+    /// https://leetcode.com/problems/longest-palindromic-substring/
+    /// </summary>
+    public class LongestPalindrome
     {
-        public string longestPalindrome(string s)
+        public string longestPalindrom(string s)
         {
-            string str = s;
-            for (int i = 0; i < str.Length; i++)
-            {
-                isPalindrome(s);
-            }
-            return str;
-        }
+            if (s.Length <= 1)
+                return s;
 
-        bool isPalindrome(string s)
-        {
-            string gvnStr = s;
-            bool result = false;
-            int n = s.Length - 1;
-            for (int i = 0; i <= s.Length / 2; i++)
+            int max_len = 1;
+            int n = s.Length;
+            int st = 0, end = 0;
+
+            //odd length
+            for (int i = 0; i < n - 1; ++i)
             {
-                if (gvnStr[1] == gvnStr[n])
-                {
-                    result = true;
+                int l = i, r = i;
+                while (l >= 0 && r < n) {
+                    if (s[l] == s[r])
+                    {
+                        l--; r++;
+                    }
+                    else
+                        break;
                 }
-                else
-                {
-                    result = false;
-                    return result;
+                int len = r - l - 1;
+                if (len > max_len) {
+                    max_len = len;
+                    st = l + 1;
+                    end = r - 1;
                 }
             }
-            return result;
+            //even length
+            for (int i = 0; i < n - 1; ++i)
+            {
+                int l = i, r = i+1;
+                while (l >= 0 && r < n)
+                {
+                    if (s[l] == s[r])
+                    {
+                        l--; r++;
+                    }
+                    else
+                        break;
+                }
+                int len = r - l - 1;
+                if (len > max_len)
+                {
+                    max_len = len;
+                    st = l + 1;
+                    end = r - 1;
+                }
+            }
+            return s.Substring(st, max_len);
         }
-
     }
+    
 }
