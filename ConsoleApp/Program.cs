@@ -224,9 +224,12 @@ namespace ConsoleApp
             Console.WriteLine("*****************************");
             Console.WriteLine();
             Console.WriteLine("My new new new  new code run here");
-            int[] arr1 = { 2, 2, 1};
-            SingleNumber objSN = new SingleNumber();
-            objSN.singleNumber(arr1);
+            string a = "11", b="1";
+            AddBinary objME = new AddBinary();
+            objME.addBinary(a ,b);
+
+
+            
 
             int[] arr = { 9, 7, 1, 2, 6};
             InsertionSort obj1 = new InsertionSort();

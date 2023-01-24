@@ -5,82 +5,30 @@ namespace TreeDS
 {
     class Program
     {
-        public class Node
-        {
-            public int Data;
-            public Node LeftNode;
-            public Node RightNode;
-
-            public Node()
-            { 
-            }
-
-            public Node(int element)
-            {
-                Data = element;
-            }
-        }
-
-        public class BinaryTree
-        {
-            public Node Root;
-            public BinaryTree()
-            {
-                Root = null;
-            }
-
-            public void AddNode(int elelment)
-            {
-                if (Root == null)
-                {
-                    Root = new Node(elelment);
-                }
-                else
-                {
-                    AddNodeRec(Root, new Node(elelment)); 
-                }
-            }
-
-            public void AddNodeRec(Node Root, Node val)
-            {
-                if (Root.Data > val.Data)
-                {
-                    if (Root.LeftNode == null)
-                    {
-                        Root.LeftNode = val;
-                        return;
-                    }
-                    else
-                        AddNodeRec(Root.LeftNode, val);
-                }
-                else
-                {
-                    if (Root.RightNode == null)
-                    {
-                        Root.RightNode = val;
-                        return;
-                    }
-                    else
-                        AddNodeRec(Root.RightNode, val);
-                }
-            }
-
-            public void TraversePreOrder(Node parent)
-            {
-                if (parent != null)
-                {
-                    Console.WriteLine(parent.Data + " ");
-                    TraversePreOrder(parent.LeftNode);
-                    TraversePreOrder(parent.RightNode);
-                }
-            }
-        }
+       
         static void Main(string[] args)
         {
         
 
-            Console.WriteLine("***************Binary Tree*******************");
-            
+            Console.WriteLine("***************Binary Tree1*******************");
+            BinaryTree7 obj = new BinaryTree7();
+            obj.AddNode(25);
+            obj.AddNode(15);
+            obj.AddNode(50);
+            obj.AddNode(10);
+            obj.AddNode(22);
+            obj.AddNode(35);
+            obj.AddNode(70);
+            obj.AddNode(4);
+            obj.AddNode(12);
+            obj.AddNode(18);
+            obj.AddNode(24);
+            obj.AddNode(31);
+            obj.AddNode(44);
+            obj.AddNode(66);
+            obj.AddNode(90);
+            Console.WriteLine();
+            obj.printInorder(obj.root);
 
 
             Console.WriteLine("***************String*******************");
@@ -114,18 +62,18 @@ namespace TreeDS
             //bT5.TraverseInOrder(bT5.Root);
             //bT5.TraversePostOrder(bT5.Root);
 
-            BinaryTree objBinaryTree = new BinaryTree();
-            objBinaryTree.AddNode(1);
-            objBinaryTree.AddNode(2);
-            objBinaryTree.AddNode(7);
-            objBinaryTree.AddNode(3);
-            objBinaryTree.AddNode(10);
-            objBinaryTree.AddNode(5);
-            objBinaryTree.AddNode(8);
+            //BinaryTree objBinaryTree = new BinaryTree();
+            //objBinaryTree.AddNode(1);
+            //objBinaryTree.AddNode(2);
+            //objBinaryTree.AddNode(7);
+            //objBinaryTree.AddNode(3);
+            //objBinaryTree.AddNode(10);
+            //objBinaryTree.AddNode(5);
+            //objBinaryTree.AddNode(8);
 
-            Console.WriteLine("PreOrder Traversal:");
-            objBinaryTree.TraversePreOrder(objBinaryTree.Root);
-            Console.WriteLine();
+            //Console.WriteLine("PreOrder Traversal:");
+            //objBinaryTree.TraversePreOrder(objBinaryTree.Root);
+            //Console.WriteLine();
 
             Console.WriteLine("***************2nd Binary Tree*******************");
             BinaryTree3 objBT3 = new BinaryTree3();
