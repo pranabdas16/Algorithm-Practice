@@ -89,9 +89,11 @@
     <Compile Include="Hacker Rank challanges and extra\Warmup\SockMerchant.cs" />
     <Compile Include="IntegerToRoman.cs" />
     <Compile Include="LeetCode\Easy\AddBinary.cs" />
+    <Compile Include="LeetCode\Easy\AddStrings.cs" />
     <Compile Include="LeetCode\Easy\ArraySign.cs" />
     <Compile Include="LeetCode\Easy\CanConstruct.cs" />
     <Compile Include="LeetCode\Easy\CommonChars.cs" />
+    <Compile Include="LeetCode\Easy\ConvertToTitle.cs" />
     <Compile Include="LeetCode\Easy\DeleteDuplicates.cs" />
     <Compile Include="LeetCode\Easy\DetectCapitol.cs" />
     <Compile Include="LeetCode\Easy\FindDifference.cs" />
@@ -102,9 +104,11 @@
     <Compile Include="LeetCode\Easy\Intersection.cs" />
     <Compile Include="LeetCode\Easy\IntersectTwoArray.cs" />
     <Compile Include="LeetCode\Easy\IsPalindrome.cs" />
+    <Compile Include="LeetCode\Easy\IsPalindrome1.cs" />
     <Compile Include="LeetCode\Easy\LengthOfLastWord.cs" />
     <Compile Include="LeetCode\Easy\LongestCommonPrefix.cs" />
     <Compile Include="LeetCode\Easy\MajorityElement.cs" />
+    <Compile Include="LeetCode\Easy\MySqrt.cs" />
     <Compile Include="LeetCode\Easy\PlusOneOnline.cs" />
     <Compile Include="LeetCode\Easy\RemoveDuplicates.cs" />
     <Compile Include="LeetCode\Easy\RemoveElement.cs" />
@@ -115,11 +119,13 @@
     <Compile Include="LeetCode\Easy\SingleNumber.cs" />
     <Compile Include="LeetCode\Easy\SortedArrayToBST.cs" />
     <Compile Include="LeetCode\Easy\TitleToNumber.cs" />
+    <Compile Include="LeetCode\Medium\AddTwoNumbers1.cs" />
     <Compile Include="LeetCode\Medium\CountGoodNumbers.cs" />
     <Compile Include="LeetCode\Medium\countGoodNumbers1.cs" />
     <Compile Include="LeetCode\Medium\CountPairs.cs" />
     <Compile Include="LeetCode\Hard\ValidNumber.cs" />
     <Compile Include="LeetCode\Medium\FrequencySort.cs" />
+    <Compile Include="LeetCode\Medium\GetSum.cs" />
     <Compile Include="LeetCode\Medium\KMP.cs" />
     <Compile Include="LeetCode\Medium\LengthOfLongestSubstring.cs" />
     <Compile Include="LeetCode\Medium\LengthOfLongestSubstring1.cs" />

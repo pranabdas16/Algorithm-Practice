@@ -72,8 +72,8 @@ namespace TreeDS.Tree
         {
             if (parent != null)
             {
-                Console.WriteLine(parent.Data + " ");
                 TraverseInOrder(parent.LeftLeaf);
+                Console.WriteLine(parent.Data + " ");
                 TraverseInOrder(parent.RightLeaf);
             }
         }
@@ -82,9 +82,10 @@ namespace TreeDS.Tree
         {
             if (parent != null)
             {
-                Console.WriteLine(parent.Data + " ");
+                
                 TraversePostOrder(parent.LeftLeaf);
                 TraversePostOrder(parent.RightLeaf);
+                Console.WriteLine(parent.Data + " ");
             }
         }
     }

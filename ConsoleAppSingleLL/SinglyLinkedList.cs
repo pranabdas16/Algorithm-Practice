@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppSingleLL
 {
-   public class Node
+   public class ListNode01
     {
         public int Data { get; set; }
-        public Node Next;
-        public Node(int data)
+        public ListNode01 Next;
+        public ListNode01(int data)
         {
             this.Data = data;
             this.Next = null;
@@ -18,8 +18,8 @@ namespace ConsoleAppSingleLL
     }
    public class SinglyLinkedList
     {
-        public Node Head { get; set; }
-        public Node Tail { get; set; }
+        public ListNode01 Head { get; set; }
+        public ListNode01 Tail { get; set; }
         public int Count { get; set; }
         
         //public SinglyLinkedList()
@@ -29,10 +29,10 @@ namespace ConsoleAppSingleLL
 
         public void AddFirst(int data)
         {
-            Node obj;
+            ListNode01 obj;
             if (Head == null)
             {
-                obj = new Node(data);
+                obj = new ListNode01(data);
             }
             else
             {

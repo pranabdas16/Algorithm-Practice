@@ -12,6 +12,46 @@ namespace ConsoleApp
     public class Program
     {
 
+        public ListNode ReverseList(ListNode head)
+        {
+            ListNode Head;
+            ///
+             void AddToHead(int element)
+            {
+                ListNode newNode = new ListNode();
+                newNode.val = element;
+                newNode.next = Head;
+
+                Head = newNode;
+                //Count++;
+            }
+
+             void AddToTail(int element)
+            {
+                ListNode tempNode = new ListNode();
+                tempNode = Head;
+
+                ListNode newNode = new ListNode();
+                newNode.val = element;
+                newNode.next = null;
+
+                while (tempNode.next != null)
+                {
+                    tempNode = tempNode.next;
+                }
+                tempNode.next = newNode;
+                //Count++;
+            }
+
+            ////
+            ListNode tempStart = head;
+
+            ListNode newList = new ListNode();
+
+
+            return tempStart;
+
+        }
         #region start the merge two list.....
         public class ListNode
         {
@@ -23,6 +63,8 @@ namespace ConsoleApp
                 this.next = next;
             }
         }
+
+        
 
         public class Solution
         {
@@ -219,17 +261,56 @@ namespace ConsoleApp
             }
         }
 
+
+
         private static void Main(string[] args)
         {
             Console.WriteLine("*****************************");
             Console.WriteLine();
             Console.WriteLine("My new new new  new code run here");
-            string a = "11", b="1";
-            AddBinary objME = new AddBinary();
-            objME.addBinary(a ,b);
+            int a = 2, b = 3;
+            GetSum objGS = new GetSum();
+            objGS.getSum2(a, b);
 
+            int[] val1 = { 2, 4, 3, 5, 7 };
+            int[] val2 = { 5, 6, 4 };
+            ListNode l1 = new ListNode(0);
+            ListNode l2 = new ListNode();
+            string str = "Hello there";
+            int lngth = str.Length;
+            Console.WriteLine($"Here is the string:{str.Substring(0, lngth-1)}");
+            string num1 = "11", num2 ="123";
+            AddStrings objADS = new AddStrings();
+            objADS.addStrings(num1, num2);
+            
+            //for (int i = 0; i < val1.Length; i++)
+            //{
+            //    ListNode tempNode = new ListNode(val1[i]);
+            //    l1 = tempNode;
+            //    //l1 = l1.next;
+                
+            //}
+            for (int i = 0; i < val1.Length; i++)
+            {
+                ListNode tempNode = new ListNode();
+                tempNode.val = val1[i];
+                tempNode.next = null;
+                while (l1.next != null)
+                {
+                    l1 = l1.next;
+                }
+                l1.next = tempNode;
+
+            }
 
             
+            AddTwoNumbers1 objATN = new AddTwoNumbers1();
+            
+
+
+            //int exceval = 89;
+            //ConvertToTitle objCTT = new ConvertToTitle();
+            //objCTT.convertToTitle(exceval);
 
             int[] arr = { 9, 7, 1, 2, 6};
             InsertionSort obj1 = new InsertionSort();

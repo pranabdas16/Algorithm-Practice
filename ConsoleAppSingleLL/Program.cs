@@ -140,17 +140,24 @@ namespace ConsoleAppSingleLL
         {
             
 			Console.WriteLine("**************************Linked List*******************************");
-            SingleList obj = new SingleList();
-            obj.AddToHead(3);
+            SingleLinkedList11 obj = new SingleLinkedList11();
             obj.AddToHead(1);
-            obj.AddToTail(5);
-            obj.Print();
-            obj.RemoveHead();
-            obj.Print();
-            obj.AddToTail(7);
-            obj.Print();
-            obj.RemoveTail();
-            obj.Print();
+            obj.AddToTail(2);
+            obj.AddToTail(3);
+            obj.AddToTail(4);
+            obj.PrintList();
+            obj.ReverseList();
+            obj.PrintList();
+            //obj.AddToHead(3);
+            //obj.AddToHead(1);
+            //obj.AddToTail(5);
+            //obj.Print();
+            //obj.RemoveHead();
+            //obj.Print();
+            //obj.AddToTail(7);
+            //obj.Print();
+            //obj.RemoveTail();
+            //obj.Print();
 
             Console.WriteLine("**************************Linked List*******************************");
 			

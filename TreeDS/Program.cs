@@ -8,7 +8,7 @@ namespace TreeDS
        
         static void Main(string[] args)
         {
-        
+            
 
             Console.WriteLine("***************Binary Tree1*******************");
             BinaryTree7 obj = new BinaryTree7();
